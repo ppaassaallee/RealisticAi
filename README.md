@@ -1,6 +1,8 @@
-# OneSource Smart Kiosk
+# OneSource AI Kiosk
 
 Next.js / TypeScript / Tailwind executive demo: a Tavus conversational avatar, bilingual patient check-in, and live receptionist handoff. **Synthetic data only.**
+
+AI Kiosk presents Alex across browser-enabled TVs, tablets, kiosks, phones and web chat. WhatsApp is a channel integration option; it is not connected in this demo. The supplied OneSource SVG is used across all screens.
 
 ## Run
 

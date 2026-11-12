@@ -1,4 +1,6 @@
 "use client";
+import Brand from "./Brand";
+import Channels from "./Channels";
 import { useEffect, useState, useRef } from "react";
 import {
   ArrowRight,
@@ -147,10 +149,7 @@ export default function Kiosk() {
   return (
     <main className="kiosk-shell">
       <header className="topbar">
-        <a className="wordmark" href="/kiosk">
-          one<span>source</span>
-          <i />
-        </a>
+        <Brand />
         <div className="location-label">
           WELCOME CLINIC <span>Patient concierge</span>
         </div>
@@ -535,6 +534,7 @@ export default function Kiosk() {
           </div>
         </section>
       </div>
+      <Channels spanish={es} />
       <footer className="kiosk-footer">
         <span>
           {es

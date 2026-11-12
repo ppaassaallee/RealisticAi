@@ -1,4 +1,6 @@
 "use client";
+import Brand from "./Brand";
+import Channels from "./Channels";
 import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
@@ -105,10 +107,7 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
   return (
     <main className="console-shell">
       <header className="topbar">
-        <a className="wordmark" href="/kiosk">
-          one<span>source</span>
-          <i />
-        </a>
+        <Brand />
         <nav>
           <a href="/kiosk">
             Patient kiosk <ArrowUpRight size={15} />
@@ -442,9 +441,10 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
           </section>
         </>
       )}
+      {mode === "demo" && <Channels />}
       <footer className="kiosk-footer">
         <span>Executive demonstration · Synthetic data only</span>
-        <span>OneSource Smart Kiosk</span>
+        <span>OneSource AI Kiosk</span>
       </footer>
     </main>
   );

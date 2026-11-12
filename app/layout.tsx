@@ -5,9 +5,9 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "OneSource | A more personal welcome",
+  title: "AI Kiosk | OneSource",
   description:
-    "Alex, your bilingual AI patient concierge. Synthetic-data demonstration.",
+    "AI Kiosk by OneSource. Meet Alex across TV, tablet, kiosk, phone and web chat, with WhatsApp as an integration option.",
 };
 export default function RootLayout({
   children,
