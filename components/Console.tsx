@@ -109,6 +109,7 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
       <header className="topbar">
         <Brand />
         <nav>
+          <a href="/analytics">Analytics</a>
           <a href="/kiosk">
             Patient kiosk <ArrowUpRight size={15} />
           </a>

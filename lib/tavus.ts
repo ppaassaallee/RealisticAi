@@ -37,7 +37,7 @@ export async function startConversation(language: "en" | "es") {
       language === "es"
         ? "Hola, soy Alex, tu asistente virtual. ¡Bienvenido! ¿Cómo puedo ayudarte hoy?"
         : "Hi, I'm Alex, your AI patient concierge. Welcome! How can I help you today?",
-    conversational_context: `Synthetic data demo only. Begin in ${language === "es" ? "Spanish" : "English"}. Use the three registered tools for every workflow action. Never claim a check-in or handoff succeeded without the tool result.`,
+    conversational_context: `Use the curated public knowledge for general questions, but no unverified facility facts. Synthetic data demo only. Begin in ${language === "es" ? "Spanish" : "English"}. Use the three registered tools for every workflow action. Never claim a check-in or handoff succeeded without the tool result.`,
     properties: {
       languages: language === "es" ? ["es", "en"] : ["en", "es"],
       max_call_duration: 600,

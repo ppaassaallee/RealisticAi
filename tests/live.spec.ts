@@ -26,12 +26,18 @@ test("live Tavus video, audio tracks, tool results, bilingual turns and teardown
   });
   page.on("pageerror", (e) => console.log("LIVE PAGE ERROR:", e.message));
   try {
-    await context.request.post("http://127.0.0.1:3000/api/action", {
-      data: { action: "reset" },
-    });
-    await context.request.post("http://127.0.0.1:3000/api/action", {
-      data: { action: "session", language: "en" },
-    });
+    await context.request.post(
+      (process.env.TEST_BASE_URL || "http://127.0.0.1:3000") + "/api/action",
+      {
+        data: { action: "reset" },
+      },
+    );
+    await context.request.post(
+      (process.env.TEST_BASE_URL || "http://127.0.0.1:3000") + "/api/action",
+      {
+        data: { action: "session", language: "en" },
+      },
+    );
     await page.goto("/kiosk");
     await page
       .getByRole("button", { name: "Talk to Alex", exact: true })
@@ -74,6 +80,23 @@ test("live Tavus video, audio tracks, tool results, bilingual turns and teardown
     });
     await page
       .getByLabel("Type to Alex")
+      .fill("What is a deductible? Please explain briefly.");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.locator('.captions[data-speaker="alex"]')).toContainText(
+      /deductible/i,
+      { timeout: 30000 },
+    );
+    await page
+      .getByLabel("Type to Alex")
+      .fill("¿Qué es un copago? Responde brevemente en español.");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.locator('.captions[data-speaker="alex"]')).toContainText(
+      /monto fijo|cantidad fija|pago fijo|importe fijo|tarifa fija/i,
+      { timeout: 30000 },
+    );
+    console.log("LIVE bilingual knowledge answers received");
+    await page
+      .getByLabel("Type to Alex")
       .fill(
         "I want to check in. My full name is Jordan Rivera, date of birth April 12, 1988, and my four-digit patient code is 1042. Please find my appointment.",
       );
@@ -82,6 +105,7 @@ test("live Tavus video, audio tracks, tool results, bilingual turns and teardown
       page.getByText("Identity verified", { exact: true }),
     ).toBeVisible({ timeout: 45000 });
     console.log("LIVE identity tool verified");
+    await expect(page.locator('.captions[data-speaker="alex"]')).toContainText(/would you like|do you confirm|shall I|want me to|confirm.*check|check.*confirm/i,{timeout:20000});
     await page
       .getByLabel("Type to Alex")
       .fill("Yes, I confirm. Please check me in for that appointment.");
@@ -110,7 +134,8 @@ test("live Tavus video, audio tracks, tool results, bilingual turns and teardown
       .poll(
         async () => {
           const r = await context.request.get(
-            "http://127.0.0.1:3000/api/state",
+            (process.env.TEST_BASE_URL || "http://127.0.0.1:3000") +
+              "/api/state",
           );
           return (await r.json()).cases.length;
         },
@@ -135,9 +160,12 @@ test("live Tavus video, audio tracks, tool results, bilingual turns and teardown
     await page.getByRole("button", { name: "End avatar call" }).click();
     await expect(page.locator("video")).toBeHidden();
   } finally {
-    await context.request.post("http://127.0.0.1:3000/api/action", {
-      data: { action: "end" },
-    });
+    await context.request.post(
+      (process.env.TEST_BASE_URL || "http://127.0.0.1:3000") + "/api/action",
+      {
+        data: { action: "end" },
+      },
+    );
     await context.close();
   }
 });

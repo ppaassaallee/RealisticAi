@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { z } from "zod";
+import type { OperationalEvent, EventType } from "./analytics";
 export type Language = "en" | "es";
 export type Patient = {
   id: string;
@@ -39,12 +40,14 @@ export type Session = {
   conversation?: { id: string; url: string; token?: string };
   providerStatus?: string;
   createdAt: number;
+  presentation?: "kiosk" | "tablet" | "web";
 };
 type Store = {
   patients: Patient[];
   sessions: Record<string, Session>;
   cases: Case[];
   revision: number;
+  events?: OperationalEvent[];
 };
 const file = () =>
   path.resolve(process.env.DEMO_DATA_FILE || "./data/demo.json");
@@ -148,10 +151,19 @@ export function mutate<T>(fn: (db: Store) => T): T {
   write(db);
   return result;
 }
-export function createSession(language: Language) {
+export function createSession(
+  language: Language,
+  presentation: "kiosk" | "tablet" | "web" = "kiosk",
+) {
   return mutate((db) => {
-    const s: Session = { id: randomUUID(), language, createdAt: Date.now() };
+    const s: Session = {
+      id: randomUUID(),
+      language,
+      presentation,
+      createdAt: Date.now(),
+    };
     db.sessions[s.id] = s;
+    recordEvent(db, s.id, "session_started");
     return s;
   });
 }
@@ -219,7 +231,7 @@ const normalize = (s: string) =>
     .toLowerCase()
     .trim()
     .replace(/\s+/g, " ");
-export function executeTool(id: string, name: string, args: unknown) {
+function executeToolCore(id: string, name: string, args: unknown) {
   return mutate((db) => {
     const s = session(db, id);
     if (name === "searchAppointment") {
@@ -310,4 +322,64 @@ export function reset() {
     }
     return { ok: true };
   });
+}
+
+export function recordEvent(
+  db: Store,
+  id: string,
+  type: EventType,
+  durationMs?: number,
+) {
+  const s = db.sessions[id];
+  if (!s) return;
+  const e: OperationalEvent = {
+    id: randomUUID(),
+    at: Date.now(),
+    sessionId: id,
+    type,
+    language: s.language,
+    presentation: s.presentation || "kiosk",
+  };
+  if (durationMs !== undefined)
+    e.durationMs = Math.round(Math.max(0, durationMs));
+  db.events = [...(db.events || []), e].slice(-5000);
+}
+export function executeTool(id: string, name: string, args: unknown) {
+  const start = Date.now();
+  const before =
+    name === "requestHumanAssistance"
+      ? read().cases.filter(
+          (c) => c.sessionId === id && c.status !== "resolved",
+        ).length
+      : 0;
+  try {
+    const result = executeToolCore(id, name, args);
+    const status = (result as { status?: string }).status;
+    const kinds: Record<string, EventType> = {
+      found: "appointment_found",
+      missing: "appointment_missing",
+      not_verified: "lookup_unverified",
+      checked_in: "check_in_completed",
+      already_checked_in: "check_in_duplicate",
+      technical_error: "tool_error",
+    };
+    const kind =
+      name === "requestHumanAssistance"
+        ? before
+          ? undefined
+          : "handoff_requested"
+        : kinds[status || ""];
+    if (kind) mutate((db) => recordEvent(db, id, kind, Date.now() - start));
+    return result;
+  } catch (error) {
+    if (
+      [
+        "searchAppointment",
+        "checkInAppointment",
+        "requestHumanAssistance",
+      ].includes(name)
+    )
+      mutate((db) => recordEvent(db, id, "tool_error", Date.now() - start));
+    throw error;
+  }
 }

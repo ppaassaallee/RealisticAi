@@ -16,7 +16,7 @@ npm run setup:tavus
 npm run dev
 ```
 
-Open http://127.0.0.1:3000/kiosk, `/staff`, and `/demo`. For a production build: `npm run build && npm start`. The default binding is local-only. Do not put this demonstration on the public internet without authentication for kiosk access and vendor usage limits.
+Open http://127.0.0.1:3000/kiosk, `/staff`, `/demo`, and `/analytics`. For a production build: `npm run build && npm start`. The default binding is local-only. Do not put this demonstration on the public internet without authentication for kiosk access and vendor usage limits.
 
 Tavus setup creates Alex's PAL, registers exactly three tools, and saves the PAL/replica IDs locally. Alex uses Tavus’s managed `tavus-gpt-sol` model for reliable workflow tool calling. The default live face is Tavus's stock **Daniel – Office** (`rf4703150052`). Set `TAVUS_REPLICA_ID` before setup to use another commercially available stock face. The supplied illustrated portrait is an explicitly labeled welcome preview; it is not the live avatar. No recording or camera activation is requested. Calls are limited to ten minutes, with short absent/left-participant timeouts.
 
@@ -63,3 +63,15 @@ Normal tests cover identity privacy, appointment ownership, confirmation, concur
 - Identity verification here is a synthetic demo mechanism, not a production identity assurance system. No EMR, payments, real patient data, staff video, sentiment analysis, or recordings.
 
 Official integration references: [Create conversation](https://docs.tavus.io/api-reference/conversations/create-conversation), [Create PAL](https://docs.tavus.io/api-reference/pals/create-pal), [LLM tools](https://docs.tavus.io/sections/conversational-video-interface/pal/llm-tool), [Tool result](https://docs.tavus.io/sections/event-schemas/conversation-tool-result), [Daily call object](https://docs.daily.co/reference/daily-js/factory-methods/create-call-object).
+
+## Frames, knowledge and analytics
+
+The kiosk, tablet and web-chat selectors change the visual frame without restarting Alex's mounted call. They simulate presentation devices, not external channel integrations.
+
+`knowledge/public.json` contains 23 bilingual, curated public answers derived from the supplied enterprise knowledge base. The kiosk offers searchable FAQs; Analytics → Alex’s knowledge provides a searchable source catalog. These are general explanations, not verified clinic policies, coverage checks or current pricing. Run `npm run setup:tavus` after changing knowledge to update Alex’s prompt.
+
+Setup preserves the existing voice and uses speed 1.05, Sparrow-2, medium turn-taking patience and high interruptibility. It backs up the original PAL configuration to ignored `data/pal-config-backup.json`. The connected call supports an explicit interrupt button and typed turns.
+
+Analytics defaults to actual application activity, with a separately labeled illustrative sample preview, 1/7/30-day filters and CSV export. Metrics include sessions, unique completed check-ins, handoffs, browser-observed response timing, presentation and language breakdowns, and server tool duration. Missing timings remain unknown. The funnel follows sessions started in the selected period. Analytics records no names, birth dates, raw transcripts or recordings; the local store retains the latest 5,000 operational events. Synthetic-patient resets preserve analytics history. Staff access rules also protect analytics.
+
+Use `TEST_BASE_URL` to target a separate QA server and `DEMO_DATA_FILE` on that server to isolate test data. The regular suite also checks frame continuity, bilingual knowledge, analytics access/privacy, duplicate-safe counts, date cohorts, sample separation, export and responsive navigation.

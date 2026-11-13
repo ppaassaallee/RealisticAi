@@ -1,0 +1,370 @@
+[
+  {
+    "id": "INS-101",
+    "category": "Insurance",
+    "title": {
+      "en": "What is a deductible?",
+      "es": "¿Qué es un deducible?"
+    },
+    "answer": {
+      "en": "An amount you may need to pay for certain covered services before some plan benefits begin paying. The amount and applicable services depend on your plan. I cannot verify your remaining deductible here.",
+      "es": "Es una cantidad que podrías pagar por ciertos servicios cubiertos antes de que algunos beneficios del plan empiecen a pagar. Depende de tu plan; aquí no puedo verificar tu deducible restante."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-102",
+    "category": "Insurance",
+    "title": {
+      "en": "Deductible, copay or coinsurance?",
+      "es": "¿Deducible, copago o coseguro?"
+    },
+    "answer": {
+      "en": "A deductible is an amount you may pay before certain benefits apply. A copay is a fixed amount for a covered service. Coinsurance is a percentage of an allowed cost. Your plan determines which applies; these are general definitions, not a personal cost estimate.",
+      "es": "El deducible es una cantidad previa a ciertos beneficios. El copago es un monto fijo por un servicio cubierto. El coseguro es un porcentaje del costo permitido. Tu plan determina cuál aplica; esto no es una cotización personal."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-103",
+    "category": "Insurance",
+    "title": {
+      "en": "Do you accept my insurance?",
+      "es": "¿Aceptan mi seguro?"
+    },
+    "answer": {
+      "en": "This demo has no verified accepted-plan directory or payer connection. Insurer acceptance, exact plan participation, network, eligibility and service coverage are different checks. Reception can help verify the exact plan; I cannot confirm acceptance or coverage here.",
+      "es": "Esta demo no tiene un directorio verificado de planes ni conexión con aseguradoras. Aceptación, plan, red, elegibilidad y cobertura son verificaciones distintas. Recepción puede ayudarte; aquí no puedo confirmar aceptación ni cobertura."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-104",
+    "category": "Insurance",
+    "title": {
+      "en": "What is prior authorization?",
+      "es": "¿Qué es una autorización previa?"
+    },
+    "answer": {
+      "en": "Some plans require approval before certain services. Requirements vary by plan and service. Authorization itself does not guarantee payment, and I cannot check your authorization status in this demo.",
+      "es": "Algunos planes requieren aprobación antes de ciertos servicios. Los requisitos varían. La autorización no garantiza el pago y esta demo no verifica su estado."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-105",
+    "category": "Insurance",
+    "title": {
+      "en": "Am I covered for this visit?",
+      "es": "¿Mi visita está cubierta?"
+    },
+    "answer": {
+      "en": "Coverage depends on your exact plan, service, network and applicable requirements. Active eligibility alone is not a coverage guarantee. This demo cannot verify your personal benefits; reception or your insurer can help.",
+      "es": "La cobertura depende de tu plan, servicio, red y requisitos. La elegibilidad activa no garantiza cobertura. Esta demo no verifica beneficios personales; recepción o tu aseguradora pueden ayudar."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-106",
+    "category": "Insurance",
+    "title": {
+      "en": "What is an out-of-pocket maximum?",
+      "es": "¿Qué es el máximo de gastos de bolsillo?"
+    },
+    "answer": {
+      "en": "Generally, it is the most a member pays for covered in-network services during a plan period, subject to that plan’s rules. It does not mean every expense is included. Your plan documents determine the details.",
+      "es": "Generalmente es el máximo que paga una persona por servicios cubiertos dentro de la red durante un período, sujeto a las reglas del plan. No incluye necesariamente todos los gastos."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-107",
+    "category": "Insurance",
+    "title": {
+      "en": "Is an Explanation of Benefits a bill?",
+      "es": "¿La explicación de beneficios es una factura?"
+    },
+    "answer": {
+      "en": "An Explanation of Benefits describes how an insurer processed a claim. It is not itself a bill. If the amounts are confusing or disputed, ask your insurer or the billing team to review them.",
+      "es": "La explicación de beneficios describe cómo procesó una reclamación la aseguradora. No es una factura. Si hay dudas o desacuerdos, consulta a tu aseguradora o al equipo de facturación."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "INS-108",
+    "category": "Insurance",
+    "title": {
+      "en": "Which plan should I choose?",
+      "es": "¿Qué plan debo elegir?"
+    },
+    "answer": {
+      "en": "I can explain general terms, but I do not have verified plan comparisons here and cannot choose a plan for you. An authorized benefits adviser can help compare documented benefits, networks and costs.",
+      "es": "Puedo explicar términos generales, pero no tengo comparaciones verificadas ni puedo elegir un plan por ti. Un asesor autorizado puede ayudarte a comparar beneficios, redes y costos documentados."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "APT-101",
+    "category": "Your visit",
+    "title": {
+      "en": "How do I check in?",
+      "es": "¿Cómo me registro?"
+    },
+    "answer": {
+      "en": "I can help with a synthetic demo appointment. We verify your full name, date of birth and four-digit demo patient code, find your appointment, then ask you to confirm before checking in. You can enter details on the touchscreen.",
+      "es": "Puedo ayudarte con una cita ficticia. Verificamos nombre, fecha de nacimiento y código de cuatro dígitos; buscamos la cita y pedimos tu confirmación antes del registro. Puedes usar la pantalla."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "APT-102",
+    "category": "Your visit",
+    "title": {
+      "en": "Can I reschedule or cancel?",
+      "es": "¿Puedo cambiar o cancelar mi cita?"
+    },
+    "answer": {
+      "en": "Rescheduling, cancellation and new bookings are not connected in this demo. I can request a receptionist to help. I will not claim that an appointment changed without a supported system confirming it.",
+      "es": "Los cambios, cancelaciones y nuevas reservas no están conectados en esta demo. Puedo solicitar ayuda de recepción. No afirmaré que una cita cambió sin confirmación del sistema."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "APT-103",
+    "category": "Your visit",
+    "title": {
+      "en": "What if I am running late?",
+      "es": "¿Qué pasa si llego tarde?"
+    },
+    "answer": {
+      "en": "There is no verified late-arrival policy loaded for this clinic. Please ask reception whether your visit can still proceed. I can request their help, but cannot promise the appointment will be honored.",
+      "es": "No hay una política verificada de llegadas tardías para esta clínica. Recepción puede confirmar si la visita puede continuar. Puedo pedir ayuda, pero no garantizar la atención."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "APT-104",
+    "category": "Your visit",
+    "title": {
+      "en": "Do I need to fast or prepare?",
+      "es": "¿Debo ayunar o prepararme?"
+    },
+    "answer": {
+      "en": "Follow the instructions supplied by your care team for your specific visit. No procedure-specific preparation instructions are loaded here. Ask the clinical team before changing medication, eating or drinking habits.",
+      "es": "Sigue las instrucciones de tu equipo de atención para tu visita. Aquí no hay indicaciones específicas de preparación. Consulta al equipo clínico antes de cambiar medicamentos, comida o bebida."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "BIL-101",
+    "category": "Billing",
+    "title": {
+      "en": "How much will I pay?",
+      "es": "¿Cuánto tendré que pagar?"
+    },
+    "answer": {
+      "en": "I do not have a verified copay, estimate or balance. Personal costs depend on the plan, service and claim processing. The billing team can help; an estimate is not a final bill.",
+      "es": "No tengo un copago, estimación ni saldo verificado. El costo depende del plan, servicio y procesamiento de la reclamación. Facturación puede ayudar; una estimación no es una factura final."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "BIL-102",
+    "category": "Billing",
+    "title": {
+      "en": "Can I pay here?",
+      "es": "¿Puedo pagar aquí?"
+    },
+    "answer": {
+      "en": "Payments are not enabled in this demo. Please do not share card or bank details with me. Reception can explain the approved payment options for your location.",
+      "es": "Los pagos no están habilitados en esta demo. No compartas datos de tarjetas ni cuentas bancarias. Recepción puede explicar las opciones autorizadas."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "FAC-101",
+    "category": "Getting help",
+    "title": {
+      "en": "Where is the department?",
+      "es": "¿Dónde está el departamento?"
+    },
+    "answer": {
+      "en": "Verified addresses, hours, rooms, parking directions and department locations have not been loaded for this demo. I will not guess. I can request help from reception.",
+      "es": "Esta demo no tiene direcciones, horarios, habitaciones ni indicaciones de estacionamiento verificadas. No voy a adivinarlas. Puedo solicitar ayuda de recepción."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "FAC-102",
+    "category": "Getting help",
+    "title": {
+      "en": "Can I get language or accessibility support?",
+      "es": "¿Puedo pedir apoyo de idioma o accesibilidad?"
+    },
+    "answer": {
+      "en": "I speak English and Spanish. I can request reception’s help with an interpreter, hearing or mobility support, but cannot confirm availability. Text input and touchscreen check-in are available here.",
+      "es": "Hablo inglés y español. Puedo pedir ayuda de recepción para intérprete, audición o movilidad, sin confirmar disponibilidad. Puedes escribir o usar el registro táctil."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "SRV-101",
+    "category": "Getting help",
+    "title": {
+      "en": "Can you explain results or prescriptions?",
+      "es": "¿Puedes interpretar resultados o recetas?"
+    },
+    "answer": {
+      "en": "I am an AI concierge, not a clinician. I cannot diagnose, interpret results, prescribe or recommend treatment. Please contact your clinical team; reception can help you reach the right person.",
+      "es": "Soy un asistente de IA, no un profesional clínico. No puedo diagnosticar, interpretar resultados, recetar ni recomendar tratamientos. Consulta a tu equipo clínico; recepción puede ayudarte a contactarlo."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "PRV-101",
+    "category": "Privacy",
+    "title": {
+      "en": "Are you recording me?",
+      "es": "¿Me estás grabando?"
+    },
+    "answer": {
+      "en": "This app requests no camera access and configures Tavus recording off. During a live call, microphone audio is sent to Tavus to support the conversation. This app does not store raw recordings or transcripts. Synthetic workflow records and aggregate operational events are stored locally. I cannot make claims about all vendor retention practices.",
+      "es": "Esta app no solicita cámara y configura la grabación de Tavus como desactivada. Durante una llamada, el audio se envía a Tavus para conversar. La app no guarda grabaciones ni transcripciones; guarda registros ficticios y eventos operativos locales. No puedo afirmar todas las prácticas de retención del proveedor."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "PRV-102",
+    "category": "Privacy",
+    "title": {
+      "en": "Can I enter my details privately?",
+      "es": "¿Puedo ingresar mis datos en pantalla?"
+    },
+    "answer": {
+      "en": "Yes. Use Check in to enter the fictional identity details on screen. Do not enter real patient records, insurance IDs, card details or other sensitive information in this demonstration. End your session when finished.",
+      "es": "Sí. Usa Registrarme para ingresar los datos ficticios en pantalla. No ingreses registros reales, identificaciones de seguro, tarjetas ni otros datos sensibles. Termina la sesión al finalizar."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "TEC-101",
+    "category": "Getting help",
+    "title": {
+      "en": "I cannot hear Alex.",
+      "es": "No puedo escuchar a Alex."
+    },
+    "answer": {
+      "en": "Use the audio button to enable playback, check your device volume, or read the captions. You can type during a live call or use touchscreen check-in without a call. End and restart the call if the connection fails.",
+      "es": "Usa el botón de audio, revisa el volumen o lee los subtítulos. Puedes escribir durante una llamada o registrarte en pantalla sin llamada. Si falla la conexión, termina y reinicia la llamada."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "HUM-101",
+    "category": "Getting help",
+    "title": {
+      "en": "Can I talk to a person?",
+      "es": "¿Puedo hablar con una persona?"
+    },
+    "answer": {
+      "en": "Yes. You do not need to explain why. I can create a reception request with the relevant collected context. A request is not a connected human: the screen updates only when staff accepts. Staff video is not included.",
+      "es": "Sí. No tienes que explicar el motivo. Puedo crear una solicitud con el contexto relevante. Una solicitud no equivale a una conexión: la pantalla se actualiza cuando recepción acepta. No incluye video de personal."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "SOL-101",
+    "category": "About AI Kiosk",
+    "title": {
+      "en": "Where can Alex be presented?",
+      "es": "¿Dónde se puede presentar Alex?"
+    },
+    "answer": {
+      "en": "AI Kiosk by OneSource can be presented in a browser on a TV, tablet, kiosk or phone, and through web chat. WhatsApp is a separate integration option and is not connected in this demo. The device frames are visual previews, not device certification.",
+      "es": "AI Kiosk de OneSource puede presentarse en navegador en TV, tablet, kiosco o teléfono, y por chat web. WhatsApp es una integración separada, no conectada en esta demo. Los marcos son vistas visuales, no certificación de equipos."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  },
+  {
+    "id": "SOL-102",
+    "category": "About AI Kiosk",
+    "title": {
+      "en": "What are the commercial options?",
+      "es": "¿Cuáles son las opciones comerciales?"
+    },
+    "answer": {
+      "en": "Ask the OneSource team about Kiosk + Software, Live Receptionist and Per Outcome options. Current approved prices, billing periods and inclusions are not loaded, so I cannot quote or promise commercial terms.",
+      "es": "Consulta al equipo de OneSource sobre Kiosk + Software, Live Receptionist y Per Outcome. No hay precios, períodos ni inclusiones vigentes aprobados cargados; no puedo cotizar ni prometer condiciones."
+    },
+    "status": "demo-ready",
+    "scope": "public-general",
+    "source": "User-provided Enterprise KB v1.0; constrained to implemented demo capabilities",
+    "reviewed": "2026-11-13"
+  }
+]

@@ -13,6 +13,8 @@ import {
   RotateCcw,
 } from "lucide-react";
 import Avatar from "./Avatar";
+import DeviceFrame, { type Presentation } from "./DeviceFrame";
+import KnowledgePanel from "./KnowledgePanel";
 import { action } from "@/lib/client";
 type Appointment = {
   id: string;
@@ -35,6 +37,7 @@ export default function Kiosk() {
   const [state, setState] = useState<State>({ cases: [] }),
     [language, setLanguage] = useState<"en" | "es">("en"),
     [step, setStep] = useState("welcome"),
+    [presentation, setPresentation] = useState<Presentation>("kiosk"),
     [active, setActive] = useState(false),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
@@ -102,7 +105,7 @@ export default function Kiosk() {
   }
   async function ensureSession() {
     if (!state.session || state.session.ended) {
-      const s = await action("session", { language });
+      const s = await action("session", { language, presentation });
       currentSession.current = s.id;
       setState((p) => ({ ...p, session: s, patient: undefined, cases: [] }));
       setStreamKey((k) => k + 1);
@@ -114,7 +117,7 @@ export default function Kiosk() {
   async function begin(next: string) {
     await run(async () => {
       if (!state.session || state.session.ended) {
-        const s = await action("session", { language });
+        const s = await action("session", { language, presentation });
         currentSession.current = s.id;
         setState((p) => ({ ...p, session: s, patient: undefined, cases: [] }));
         setStreamKey((k) => k + 1);
@@ -469,6 +472,7 @@ export default function Kiosk() {
                 : "Reconnecting to reception…"}
             </div>
           )}
+          <KnowledgePanel spanish={es} />
           <div className="voice-invite">
             <Sparkles size={20} />
             <div>
@@ -513,12 +517,18 @@ export default function Kiosk() {
           </div>
         </section>
         <section className="avatar-column">
-          <Avatar
-            active={active}
-            language={language}
-            onStop={() => setActive(false)}
-            onError={setError}
-          />
+          <DeviceFrame
+            mode={presentation}
+            onChange={setPresentation}
+            spanish={es}
+          >
+            <Avatar
+              active={active}
+              language={language}
+              onStop={() => setActive(false)}
+              onError={setError}
+            />
+          </DeviceFrame>
           <div className="avatar-footnote">
             <span className="dot" />
             {es ? "Inglés y español" : "English & Español"}
@@ -567,6 +577,7 @@ export default function Kiosk() {
           )}
           <a href="/staff">{es ? "Recepción" : "Staff"}</a>
           <a href="/demo">Demo</a>
+          <a href="/analytics">{es ? "Analítica" : "Analytics"}</a>
         </div>
       </footer>
     </main>

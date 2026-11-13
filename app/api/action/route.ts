@@ -2,6 +2,7 @@ import { cookies } from "next/headers";
 import { z } from "zod";
 import {
   createSession,
+  recordEvent,
   executeTool,
   mutate,
   read,
@@ -52,6 +53,7 @@ export async function POST(req: Request) {
       }
       const s = createSession(
         z.enum(["en", "es"]).parse(body.language || "en"),
+        z.enum(["kiosk", "tablet", "web"]).parse(body.presentation || "kiosk"),
       );
       jar.set("concierge_session", s.id, {
         httpOnly: true,
@@ -76,6 +78,12 @@ export async function POST(req: Request) {
           const status = z.enum(["accepted", "resolved"]).parse(body.status);
           if (c.status === "resolved" && status === "accepted")
             throw new Error("Case already resolved");
+          if (c.status !== status)
+            recordEvent(
+              db,
+              c.sessionId,
+              status === "accepted" ? "handoff_accepted" : "handoff_resolved",
+            );
           c.status = status;
           return c;
         }),
@@ -95,6 +103,15 @@ export async function POST(req: Request) {
       return Response.json({ ok: true });
     }
     session(read(), id);
+    if (action === "response-observed") {
+      const duration = z.number().min(0).max(120000).parse(body.durationMs);
+      return Response.json(
+        mutate((db) => {
+          recordEvent(db, id, "response_observed", duration);
+          return { ok: true };
+        }),
+      );
+    }
     if (action === "tool")
       return Response.json(
         executeTool(id, z.string().parse(body.name), body.args),
@@ -125,6 +142,14 @@ export async function POST(req: Request) {
     if (action === "avatar-status")
       return Response.json(
         mutate((db) => {
+          const current = session(db, id);
+          const next = z
+            .enum(["connecting", "listening", "speaking", "offline", "error"])
+            .parse(body.status);
+          if (next === "error" && current.providerStatus !== "error")
+            recordEvent(db, id, "avatar_error");
+          if (next === "listening" && current.providerStatus === "connecting")
+            recordEvent(db, id, "avatar_connected");
           session(db, id).providerStatus = z
             .enum(["connecting", "listening", "speaking", "offline", "error"])
             .parse(body.status);

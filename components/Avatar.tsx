@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import type { DailyCall } from "@daily-co/daily-js";
-import { Mic, MicOff, PhoneOff, Volume2 } from "lucide-react";
+import { Mic, MicOff, PhoneOff, Volume2, Square } from "lucide-react";
 import { action } from "@/lib/client";
 let pendingShutdown: Promise<unknown> = Promise.resolve();
 export default function Avatar({
@@ -19,9 +19,11 @@ export default function Avatar({
     audio = useRef<HTMLAudioElement>(null),
     call = useRef<DailyCall | null>(null),
     conversation = useRef("");
+  const responseStart = useRef<number | null>(null);
   const [status, setStatus] = useState("offline"),
     [muted, setMuted] = useState(false),
     [caption, setCaption] = useState(""),
+    [captionRole, setCaptionRole] = useState("alex"),
     [hasVideo, setHasVideo] = useState(false),
     [typed, setTyped] = useState("");
   const callbacks = useRef({ onStop, onError });
@@ -31,7 +33,10 @@ export default function Avatar({
     let cancelled = false;
     let instance: DailyCall | null = null;
     const handled = new Map<string, Promise<unknown>>();
+    let lastStatus = "";
     const update = (s: string) => {
+      if (lastStatus === s) return;
+      lastStatus = s;
       if (cancelled) return;
       setStatus(s);
       void action("avatar-status", { status: s }).catch(() => {});
@@ -114,6 +119,24 @@ export default function Avatar({
           const data = event.data;
           const props = data?.properties || {};
           if (
+            data?.event_type === "conversation.stopped_speaking" &&
+            props.role === "user"
+          )
+            responseStart.current = performance.now();
+          if (
+            data?.event_type === "conversation.started_speaking" &&
+            ["pal", "replica"].includes(props.role) &&
+            responseStart.current !== null
+          ) {
+            const elapsed = performance.now() - responseStart.current;
+            responseStart.current = null;
+            if (elapsed >= 0 && elapsed <= 120000)
+              void action("response-observed", { durationMs: elapsed }).catch(
+                () => {},
+              );
+          }
+
+          if (
             data?.event_type === "conversation.started_speaking" &&
             ["pal", "replica"].includes(props.role)
           )
@@ -128,7 +151,10 @@ export default function Avatar({
             data?.event_type === "conversation.utterance.streaming"
           ) {
             const text = props.speech || props.text || props.transcript;
-            if (typeof text === "string") setCaption(text);
+            if (typeof text === "string") {
+              setCaption(text);
+              setCaptionRole(props.role === "user" ? "user" : "alex");
+            }
           }
           if (data?.event_type !== "conversation.tool_call") return;
           const toolId = props.tool_call_id || data.tool_call_id;
@@ -212,6 +238,8 @@ export default function Avatar({
       setHasVideo(false);
       setStatus("offline");
       setCaption("");
+      setTyped("");
+      responseStart.current = null;
       pendingShutdown = started
         .catch(() => {})
         .then(() => action("avatar-end"))
@@ -283,7 +311,14 @@ export default function Avatar({
           </span>
         </div>
         {caption && (
-          <div className="captions" aria-live="polite">
+          <div
+            className="captions"
+            data-speaker={captionRole}
+            aria-live="polite"
+          >
+            <span className="caption-speaker">
+              {captionRole === "alex" ? "Alex" : es ? "Tú" : "You"}
+            </span>
             {caption}
           </div>
         )}
@@ -314,6 +349,22 @@ export default function Avatar({
               <Volume2 size={21} />
             </button>
             <button
+              aria-label={es ? "Interrumpir a Alex" : "Interrupt Alex"}
+              onClick={() => {
+                call.current?.sendAppMessage(
+                  {
+                    message_type: "conversation",
+                    event_type: "conversation.interrupt",
+                    conversation_id: conversation.current,
+                  },
+                  "*",
+                );
+                setStatus("listening");
+              }}
+            >
+              <Square size={18} />
+            </button>
+            <button
               aria-label="End avatar call"
               className="hangup"
               onClick={onStop}
@@ -327,7 +378,16 @@ export default function Avatar({
             className="avatar-chat"
             onSubmit={(e) => {
               e.preventDefault();
-              if (!typed.trim()) return;
+              if (!typed.trim() || !hasVideo) return;
+              responseStart.current = performance.now();
+              call.current?.sendAppMessage(
+                {
+                  message_type: "conversation",
+                  event_type: "conversation.interrupt",
+                  conversation_id: conversation.current,
+                },
+                "*",
+              );
               call.current?.sendAppMessage(
                 {
                   message_type: "conversation",
@@ -347,7 +407,7 @@ export default function Avatar({
               placeholder={es ? "O escribe a Alex…" : "Or type to Alex…"}
               maxLength={500}
             />
-            <button type="submit" disabled={!typed.trim()}>
+            <button type="submit" disabled={!typed.trim() || !hasVideo}>
               {es ? "Enviar" : "Send"}
             </button>
           </form>

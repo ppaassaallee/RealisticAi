@@ -87,7 +87,9 @@ test("missing appointment handoff and staff acceptance synchronize across browse
 }) => {
   const staffContext = await browser.newContext();
   const staff = await staffContext.newPage();
-  await staff.goto("http://127.0.0.1:3000/staff");
+  await staff.goto(
+    (process.env.TEST_BASE_URL || "http://127.0.0.1:3000") + "/staff",
+  );
   await page.goto("/kiosk");
   await page.getByRole("button", { name: "Check in", exact: true }).click();
   await page.getByLabel("Full name").fill("Taylor Morgan");
