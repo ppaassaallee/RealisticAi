@@ -34,7 +34,7 @@ export async function GET(req: Request) {
           close();
         }
       };
-      timer = setInterval(send, 750);
+      timer = setInterval(send, 2000);
       req.signal.addEventListener("abort", close, { once: true });
       send();
     },

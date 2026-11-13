@@ -39,6 +39,8 @@ export type Session = {
   failure?: boolean;
   conversation?: { id: string; url: string; token?: string };
   providerStatus?: string;
+  voiceEpoch?: number;
+  pendingEndId?: string;
   createdAt: number;
   presentation?: "kiosk" | "tablet" | "web";
 };

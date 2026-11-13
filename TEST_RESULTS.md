@@ -1,3 +1,13 @@
+## November 13, 2026 — consumption safeguards for both avatars
+
+Typecheck and isolated production build passed (three pre-existing filesystem tracing warnings). Full regression suite: **81 passed, 3 opt-in checks skipped**. No paid Tavus calls were created during this review.
+
+New checks cover silence/absolute/connection timeout boundaries, both outgoing provider payloads, no automatic provider creation while browsing frames, cross-tab call exclusion for both avatars, browser clock-driven 45-second connection cancellation without automatic retries, and Alex cleanup with stale IDs, failed provider closure and ended-session retries. Provider payload tests use mocked fetch; these are not a fresh live billing measurement. Existing banking/healthcare flows, device frames and handoff synchronization passed after retaining fast polling for unresolved cases.
+
+Defaults: 300-second provider maximum; 90-second browser voice inactivity limit; 45-second connection watchdog; retained 30-second absent-participant and 10-second participant-left provider limits. Closure releases media; browser Web Locks limit same-origin demo tabs. Browser death/offline cleanup is best effort, bounded by the provider limit. Different browsers/devices are not covered by the browser lock. Read-only inspection found zero conversation/pending-close IDs in both local application stores; this is not an account-wide Tavus audit.
+
+Idle bank polling is reduced to 30 seconds and skipped while hidden, with four-second polling during visible live calls or unresolved handoffs. Alex server event polling reduced from 750ms to two seconds. Refresh existing tabs to load changes; no deployment or account billing settings changed.
+
 ## November 13, 2026 — Juliana call stability
 
 - Typecheck and isolated production build passed. Build retains three existing filesystem-tracing warnings in Alex's local store.

@@ -11,6 +11,7 @@ import {
 } from "@/lib/store";
 import { sid, staffAllowed, sameOrigin } from "@/lib/auth";
 import { startConversation, endConversation } from "@/lib/tavus";
+import { closeVoice, drainVoice } from "@/lib/voice-lifecycle";
 export const runtime = "nodejs";
 const flights = new Map<string, Promise<unknown>>();
 export async function POST(req: Request) {
@@ -43,14 +44,7 @@ export async function POST(req: Request) {
     )
       return Response.json({ error: "Staff access required" }, { status: 401 });
     if (action === "session") {
-      if (id) {
-        const previous = read().sessions[id];
-        if (previous?.conversation)
-          await endConversation(previous.conversation.id);
-        mutate((db) => {
-          if (db.sessions[id]) db.sessions[id].ended = true;
-        });
-      }
+      if (id) await closeVoice(id, undefined, true);
       const s = createSession(
         z.enum(["en", "es"]).parse(body.language || "en"),
         z.enum(["kiosk", "tablet", "web"]).parse(body.presentation || "kiosk"),
@@ -66,8 +60,7 @@ export async function POST(req: Request) {
     }
     if (action === "reset") {
       for (const s of Object.values(read().sessions))
-        if (s.conversation && !s.ended)
-          await endConversation(s.conversation.id);
+        await closeVoice(s.id, undefined, true);
       return Response.json(reset());
     }
     if (action === "case") {
@@ -90,16 +83,12 @@ export async function POST(req: Request) {
       );
     }
     if (!id) throw new Error("Start a session first.");
-    if (action === "end") {
-      const s = read().sessions[id];
-      if (s?.conversation) await endConversation(s.conversation.id);
-      mutate((db) => {
-        if (db.sessions[id]) {
-          db.sessions[id].ended = true;
-          delete db.sessions[id].verifiedPatientId;
-          delete db.sessions[id].conversation;
-        }
-      });
+    if (action === "end" || action === "avatar-end") {
+      const expectedId =
+        action === "avatar-end"
+          ? z.string().max(100).optional().parse(body.conversationId)
+          : undefined;
+      await closeVoice(id, expectedId, action === "end");
       return Response.json({ ok: true });
     }
     session(read(), id);
@@ -130,15 +119,6 @@ export async function POST(req: Request) {
           return { ok: true };
         }),
       );
-    if (action === "avatar-end") {
-      const s = read().sessions[id];
-      if (s.conversation) await endConversation(s.conversation.id);
-      mutate((db) => {
-        delete db.sessions[id].conversation;
-        db.sessions[id].providerStatus = "offline";
-      });
-      return Response.json({ ok: true });
-    }
     if (action === "avatar-status")
       return Response.json(
         mutate((db) => {
@@ -159,8 +139,10 @@ export async function POST(req: Request) {
     if (action === "avatar") {
       if (!flights.has(id)) {
         const pending = (async () => {
+          await drainVoice(id);
           const s = session(read(), id);
           if (s.conversation) return s.conversation;
+          const epoch = s.voiceEpoch || 0;
           const c = await startConversation(s.language);
           const result = {
             id: c.conversation_id,
@@ -170,11 +152,19 @@ export async function POST(req: Request) {
           try {
             mutate((db) => {
               const active = session(db, id);
+              if ((active.voiceEpoch || 0) !== epoch)
+                throw new Error("Call cancelled. Start again when ready.");
               active.conversation = result;
               active.providerStatus = "connecting";
             });
           } catch (e) {
-            await endConversation(result.id);
+            try {
+              await endConversation(result.id);
+            } catch {
+              mutate((db) => {
+                if (db.sessions[id]) db.sessions[id].pendingEndId = result.id;
+              });
+            }
             throw e;
           }
           return result;

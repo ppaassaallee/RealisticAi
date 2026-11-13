@@ -102,6 +102,8 @@ export default function BankKiosk() {
     sessionRef = useRef<any>(null),
     fresh = useRef(false),
     refreshVersion = useRef(0);
+  const activeRef = useRef(active);
+  activeRef.current = active;
   const en = language === "en";
   const refresh = async () => {
     if (!navigator.onLine) return;
@@ -136,6 +138,7 @@ export default function BankKiosk() {
     };
     window.addEventListener("pointerdown", touch);
     window.addEventListener("keydown", touch);
+    let lastRefresh = 0;
     const timer = setInterval(() => {
       if (
         sessionRef.current &&
@@ -160,7 +163,20 @@ export default function BankKiosk() {
         setError(
           "Por privacidad, finalizamos la sesión inactiva. Podés comenzar otra.",
         );
-      } else if (sessionRef.current) refresh().catch(() => {});
+      } else if (
+        sessionRef.current &&
+        document.visibilityState === "visible" &&
+        Date.now() - lastRefresh >=
+          (activeRef.current ||
+          sessionRef.current.cases?.some(
+            (c: { status: string }) => c.status !== "resolved",
+          )
+            ? 4000
+            : 30000)
+      ) {
+        lastRefresh = Date.now();
+        refresh().catch(() => {});
+      }
     }, 4000);
     if ("serviceWorker" in navigator)
       navigator.serviceWorker

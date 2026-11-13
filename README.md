@@ -77,3 +77,14 @@ Setup preserves the existing voice and uses speed 1.05, Sparrow-2, medium turn-t
 Analytics defaults to actual application activity, with a separately labeled illustrative sample preview, 1/7/30-day filters and CSV export. Metrics include sessions, unique completed check-ins, handoffs, browser-observed response timing, presentation and language breakdowns, and server tool duration. Missing timings remain unknown. The funnel follows sessions started in the selected period. Analytics records no names, birth dates, raw transcripts or recordings; the local store retains the latest 5,000 operational events. Synthetic-patient resets preserve analytics history. Staff access rules also protect analytics.
 
 Use `TEST_BASE_URL` to target a separate QA server and `DEMO_DATA_FILE` on that server to isolate test data. The regular suite also checks frame continuity, bilingual knowledge, analytics access/privacy, duplicate-safe counts, date cohorts, sample separation, export and responsive navigation.
+
+
+### Demo consumption limits
+
+Alex and Juliana start Tavus only after an explicit call button press. Browsing, static portraits and device frames do not start paid conversations. Each new call sends Tavus a 300-second maximum, a 30-second no-participant timeout and a 10-second last-participant-left timeout. See the [Tavus create-conversation API contract](https://docs.tavus.io/openapi.yaml). These provider settings remain the fallback if browser cleanup cannot reach the app server.
+
+The browser ends voice after 90 seconds without conversation activity or typed input, cancels a connection that has not produced video within 45 seconds, and stops on loss of network. A visible warning appears during the final 20 seconds. Reconnecting always requires another click; there is no automatic paid retry. Muting alone does not end a call: use the red hang-up control when finished.
+
+Chrome's Web Locks prevent overlapping demo calls across tabs of the same origin, including Alex versus Juliana. This is not an account-wide limit across different browsers or devices. Switching to a meeting tab does not itself end voice, so Teams/Meet demos remain usable. Closing/reloading sends best-effort provider cleanup and releases local media; the provider cap protects against a lost close request. Refresh existing demo tabs to load the safeguards; already-created calls keep their original provider configuration.
+
+Idle Juliana state polling slows to 30 seconds and pauses while hidden, retaining four-second updates during a visible live call or unresolved handoff. Alex's server event polling runs every two seconds. No recordings or paid background test calls are enabled by this change.

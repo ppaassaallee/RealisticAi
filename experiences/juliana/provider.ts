@@ -1,3 +1,4 @@
+import { MAX_CALL_SECONDS } from "@/lib/voice-budget";
 import { tavus, TavusError, endConversation } from "@/lib/tavus";
 import { modes } from "./config";
 import type { BankSession } from "./store";
@@ -28,7 +29,7 @@ export async function startBankConversation(s: BankSession) {
     conversational_context: `Fictional bank, synthetic demonstration only. Context: ${modes[s.mode].name}. Language: ${s.language}. Every bankingJourney call opens the relevant screen. Use step open only when required data is missing; otherwise execute lookup/calculate/prepare directly in the same turn; searchBankKnowledge for approved information. Never access healthcare tools. Never claim real money moved. Ask one question at a time. Keep explanations warm and concise; do not repeat demo disclaimers on every turn or read every backend caveat aloud. Clearly distinguish simulated transaction confirmations once, and never claim real funds moved.`,
     properties: {
       languages: s.language === "es" ? ["es", "en"] : ["en", "es"],
-      max_call_duration: 600,
+      max_call_duration: MAX_CALL_SECONDS,
       participant_left_timeout: 10,
       participant_absent_timeout: 30,
       enable_recording: false,

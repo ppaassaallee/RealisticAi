@@ -1,5 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { acquireVoiceLease } from "@/lib/voice-lease";
+import { useVoiceBudget } from "@/components/useVoiceBudget";
+import { isVoiceActivity } from "@/lib/voice-budget";
 import type { DailyCall } from "@daily-co/daily-js";
 import { Mic, MicOff, PhoneOff, Volume2, Square } from "lucide-react";
 import { action } from "@/lib/client";
@@ -26,11 +29,20 @@ export default function Avatar({
     [captionRole, setCaptionRole] = useState("alex"),
     [hasVideo, setHasVideo] = useState(false),
     [typed, setTyped] = useState("");
+  const budget = useVoiceBudget(
+    active,
+    hasVideo,
+    language === "es",
+    onStop,
+    onError,
+  );
   const callbacks = useRef({ onStop, onError });
   callbacks.current = { onStop, onError };
   useEffect(() => {
     if (!active) return;
     let cancelled = false;
+    let createdId = "";
+    let releaseLease: (() => void) | undefined;
     let instance: DailyCall | null = null;
     const handled = new Map<string, Promise<unknown>>();
     let lastStatus = "";
@@ -79,12 +91,18 @@ export default function Avatar({
       try {
         await pendingShutdown;
         if (cancelled) return;
+        releaseLease = await acquireVoiceLease();
+        if (cancelled) {
+          releaseLease();
+          return;
+        }
         setMuted(false);
         update("connecting");
         const c = await action("avatar");
+        createdId = c.id;
         conversation.current = c.id;
         if (cancelled) {
-          await action("avatar-end");
+          await action("avatar-end", { conversationId: c.id });
           return;
         }
         const Daily = (await import("@daily-co/daily-js")).default;
@@ -104,10 +122,12 @@ export default function Avatar({
             if (!cancelled) callbacks.current.onStop();
           })
           .on("error", () => {
+            if (cancelled) return;
             update("error");
             callbacks.current.onError(
-              "Avatar connection interrupted. End the session and reconnect.",
+              "Avatar connection interrupted. Reconnect when ready.",
             );
+            callbacks.current.onStop();
           });
         instance.on("active-speaker-change", (event) => {
           if (!event || !instance) return;
@@ -117,6 +137,7 @@ export default function Avatar({
         instance.on("app-message", async (event) => {
           if (!event || cancelled) return;
           const data = event.data;
+          if (data && isVoiceActivity(data)) budget.touch();
           const props = data?.properties || {};
           if (
             data?.event_type === "conversation.stopped_speaking" &&
@@ -210,6 +231,7 @@ export default function Avatar({
           startAudioOff: false,
         });
       } catch (e) {
+        if (cancelled) return;
         update("error");
         callbacks.current.onError(
           e instanceof Error ? e.message : "Unable to connect",
@@ -219,13 +241,23 @@ export default function Avatar({
     }
     const started = start();
     const leave = () => {
+      cancelled = true;
+      callbacks.current.onStop();
       instance?.setLocalAudio(false);
-      void instance?.destroy();
+      void instance?.destroy().catch(() => {});
       navigator.sendBeacon(
         "/api/action",
-        new Blob([JSON.stringify({ action: "avatar-end" })], {
-          type: "application/json",
-        }),
+        new Blob(
+          [
+            JSON.stringify({
+              action: "avatar-end",
+              conversationId: createdId || undefined,
+            }),
+          ],
+          {
+            type: "application/json",
+          },
+        ),
       );
     };
     window.addEventListener("pagehide", leave);
@@ -233,17 +265,27 @@ export default function Avatar({
       cancelled = true;
       window.removeEventListener("pagehide", leave);
       instance?.setLocalAudio(false);
-      void instance?.destroy();
+      const destroyed = instance?.destroy().catch(() => {});
       call.current = null;
+      if (audio.current) {
+        audio.current.pause();
+        audio.current.srcObject = null;
+      }
+      if (video.current) video.current.srcObject = null;
       setHasVideo(false);
       setStatus("offline");
       setCaption("");
       setTyped("");
       responseStart.current = null;
-      pendingShutdown = started
-        .catch(() => {})
-        .then(() => action("avatar-end"))
-        .catch(() => {});
+      const close = () =>
+        createdId
+          ? action("avatar-end", { conversationId: createdId })
+          : Promise.resolve();
+      // Close a known provider call immediately, even if Daily.join is stalled.
+      const closed = createdId ? close() : started.catch(() => {}).then(close);
+      pendingShutdown = Promise.allSettled([destroyed, closed]).then(() => {
+        releaseLease?.();
+      });
     };
   }, [active]);
   useEffect(() => {
@@ -310,6 +352,11 @@ export default function Avatar({
             {es ? "Una bienvenida más humana." : "A more personal welcome."}
           </span>
         </div>
+        {active && (
+          <div className="glass-pill" role="status">
+            {budget.notice}
+          </div>
+        )}
         {caption && (
           <div
             className="captions"
@@ -379,6 +426,7 @@ export default function Avatar({
             onSubmit={(e) => {
               e.preventDefault();
               if (!typed.trim() || !hasVideo) return;
+              budget.touch();
               responseStart.current = performance.now();
               call.current?.sendAppMessage(
                 {

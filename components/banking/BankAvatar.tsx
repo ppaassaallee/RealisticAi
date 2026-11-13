@@ -1,5 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { acquireVoiceLease } from "@/lib/voice-lease";
+import { useVoiceBudget } from "@/components/useVoiceBudget";
+import { isVoiceActivity } from "@/lib/voice-budget";
 import type { DailyCall } from "@daily-co/daily-js";
 import { Mic, MicOff, PhoneOff, Volume2, Square } from "lucide-react";
 import { bankAction as action } from "./client";
@@ -29,12 +32,20 @@ export default function BankAvatar({
     [captionRole, setCaptionRole] = useState("juliana"),
     [hasVideo, setHasVideo] = useState(false),
     [typed, setTyped] = useState("");
+  const budget = useVoiceBudget(
+    active,
+    hasVideo,
+    language === "es",
+    onStop,
+    onError,
+  );
   const callbacks = useRef({ onStop, onError, onActivity });
   callbacks.current = { onStop, onError, onActivity };
   useEffect(() => {
     if (!active) return;
     let cancelled = false;
     let createdId = "";
+    let releaseLease: (() => void) | undefined;
     let instance: DailyCall | null = null;
     const handled = new Map<string, Promise<unknown>>();
     let lastStatus = "";
@@ -83,6 +94,11 @@ export default function BankAvatar({
       try {
         await pendingShutdown;
         if (cancelled) return;
+        releaseLease = await acquireVoiceLease();
+        if (cancelled) {
+          releaseLease();
+          return;
+        }
         setMuted(false);
         update("connecting");
         const c = await action("avatar");
@@ -126,6 +142,7 @@ export default function BankAvatar({
         instance.on("app-message", async (event) => {
           if (!event || cancelled) return;
           const data = event.data;
+          if (data && isVoiceActivity(data)) budget.touch();
           const props = data?.properties || {};
           if (data && isConversationActivity(data))
             callbacks.current.onActivity();
@@ -239,8 +256,10 @@ export default function BankAvatar({
     }
     const started = start();
     const leave = () => {
+      cancelled = true;
+      callbacks.current.onStop();
       instance?.setLocalAudio(false);
-      void instance?.destroy();
+      void instance?.destroy().catch(() => {});
       navigator.sendBeacon(
         "/api/juliana",
         new Blob(
@@ -263,18 +282,25 @@ export default function BankAvatar({
       instance?.setLocalAudio(false);
       const destroyed = instance?.destroy().catch(() => {});
       call.current = null;
+      if (audio.current) {
+        audio.current.pause();
+        audio.current.srcObject = null;
+      }
+      if (video.current) video.current.srcObject = null;
       setHasVideo(false);
       setStatus("offline");
       setCaption("");
       setTyped("");
       responseStart.current = null;
-      pendingShutdown = Promise.allSettled([started, destroyed])
-        .then(() =>
-          createdId
-            ? action("avatar-end", { conversationId: createdId })
-            : undefined,
-        )
-        .catch(() => {});
+      const close = () =>
+        createdId
+          ? action("avatar-end", { conversationId: createdId })
+          : Promise.resolve();
+      // Close a known provider call immediately, even if Daily.join is stalled.
+      const closed = createdId ? close() : started.catch(() => {}).then(close);
+      pendingShutdown = Promise.allSettled([destroyed, closed]).then(() => {
+        releaseLease?.();
+      });
     };
   }, [active]);
   useEffect(() => {
@@ -345,6 +371,11 @@ export default function BankAvatar({
               : "Cerca de vos, estés donde estés."}
           </span>
         </div>
+        {active && (
+          <div className="glass-pill" role="status">
+            {budget.notice}
+          </div>
+        )}
         {caption && (
           <div
             className="captions"
@@ -424,6 +455,7 @@ export default function BankAvatar({
               callbacks.current.onActivity();
               call.current?.setLocalAudio(false);
               setMuted(true);
+              budget.touch();
               responseStart.current = performance.now();
               if (status === "speaking")
                 call.current?.sendAppMessage(
