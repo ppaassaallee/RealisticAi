@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { sessionShouldExpire } from "@/experiences/juliana/voice";
 import BankAvatar from "./BankAvatar";
+import DeviceFrame, { type Presentation } from "../DeviceFrame";
 import { bankAction } from "./client";
 import {
   defaultConfig,
@@ -96,6 +97,7 @@ export default function BankKiosk() {
     [feedback, setFeedback] = useState(false);
   const [values, setValues] = useState<Record<string, string>>(initialValues);
   const [consent, setConsent] = useState(false);
+  const [presentation, setPresentation] = useState<Presentation>("kiosk");
   const activity = useRef(Date.now()),
     sessionRef = useRef<any>(null),
     fresh = useRef(false),
@@ -817,7 +819,12 @@ export default function BankKiosk() {
           )}
         </section>
         <aside className="bank-avatar-column">
-          <div className="bank-avatar-wrap">
+          <DeviceFrame
+            mode={presentation}
+            onChange={setPresentation}
+            spanish={!en}
+            assistantName="Juliana"
+          >
             <BankAvatar
               active={active}
               language={language}
@@ -827,7 +834,7 @@ export default function BankKiosk() {
                 activity.current = Date.now();
               }}
             />
-          </div>
+          </DeviceFrame>
           <div className="bank-avatar-foot">
             <span>
               <span className="bank-dot" />

@@ -2564,4 +2564,27 @@ select:focus {
     font-size: 12px;
   }
 }
-.caption-speaker{display:block;font-size:8px;text-transform:uppercase;letter-spacing:1.4px;color:#91d4d3;margin-bottom:6px}
+.caption-speaker {
+  display: block;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #91d4d3;
+  margin-bottom: 6px;
+}
+
+/* A larger presentation kiosk; tablet and web retain their compact proportions. */
+.device-kiosk .device-screen .avatar-scene {
+  height: clamp(600px, 74vh, 940px);
+}
+@media (min-width: 1051px) {
+  .kiosk-grid:has(.device-kiosk) {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .device-kiosk .device-screen .avatar-scene {
+    height: clamp(500px, 70svh, 680px);
+  }
+}

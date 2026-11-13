@@ -6,11 +6,13 @@ export default function DeviceFrame({
   onChange,
   spanish,
   children,
+  assistantName = "Alex",
 }: {
   mode: Presentation;
   onChange: (mode: Presentation) => void;
   spanish: boolean;
   children: React.ReactNode;
+  assistantName?: string;
 }) {
   return (
     <div className={"device-preview device-" + mode}>
@@ -55,8 +57,8 @@ export default function DeviceFrame({
       </div>
       <div className="device-description">
         {spanish
-          ? "Vista de presentación · La misma experiencia de Alex"
-          : "Presentation preview · The same Alex experience"}
+          ? `Vista de presentación · La misma experiencia de ${assistantName}`
+          : `Presentation preview · The same ${assistantName} experience`}
       </div>
     </div>
   );

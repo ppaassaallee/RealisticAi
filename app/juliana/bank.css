@@ -1100,3 +1100,34 @@
 .bank-admin-grid + .bank-config-grid {
   max-width: none;
 }
+
+/* Shared presentation frames keep the same mounted Juliana call. */
+.bank .device-kiosk .device-screen .avatar-scene {
+  height: clamp(680px, 78vh, 960px);
+}
+.bank .device-tablet .device-screen .avatar-scene {
+  height: clamp(460px, 58vh, 680px);
+}
+.bank .device-web .device-screen .avatar-scene {
+  height: clamp(420px, 54vh, 640px);
+}
+.bank .device-selector button[aria-pressed="true"] {
+  color: #254d3b;
+}
+@media (min-width: 1051px) {
+  .bank-main-grid:has(.device-kiosk) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .bank .device-kiosk .device-screen .avatar-scene {
+    height: clamp(560px, 74svh, 720px);
+  }
+  .bank .device-tablet .device-screen .avatar-scene {
+    height: 480px;
+  }
+  .bank .device-web .device-screen .avatar-scene {
+    height: 440px;
+  }
+}
