@@ -1,3 +1,18 @@
+# Juliana expansion — November 13, 2026
+
+- Final production build in the isolated QA checkout: passed. All Alex routes and new platform/Juliana routes generated. Three pre-existing dynamic filesystem tracing warnings remain in Alex's unchanged store.
+- Final production-server suite: **70 passed, 3 opt-in tests skipped** (19.8 seconds). Includes all original Alex regression tests, all ten bank journeys, 50 Spanish written intent scenarios, privacy/isolation, consent and confirmation, duplicate payment protection, permissions, modes/tool restrictions, session expiry, knowledge schema/fixtures, touch UI, offline controls, export and switching both ways with outgoing-session cleanup.
+- Juliana live Tavus test: **passed** (18.9 seconds). Real remote video/audio and playback, interrupt control, Spanish remittance lookup, home saving and credit calculations, knowledge tool retrieval, human-handoff case and call teardown. A prompt correction removed an unnecessary open-form step when all required inputs were already supplied. This test uses typed turns and a test microphone; physical microphone/room audio and regional accent quality are not certified.
+- Alex live Tavus regression: **passed** (23.7 seconds). Real media, English/Spanish knowledge, appointment lookup, confirmed check-in and staff handoff. Alex's provider system prompt and layers were compared before/after Juliana setup and remained unchanged.
+- Independent banking role test against production with QA-only credentials: **passed**. Administrator configuration, operator case acceptance, viewer read-only access, anonymous denial and invalid-login rejection verified.
+- Production offline reload: **passed**. Cached shell hydrated, five matching public remittance entries appeared, and voice/server actions stayed disabled. Development hot reload itself needs network; offline reload is validated on the production build.
+- `npm run typecheck` and `git diff --check`: passed.
+- Desktop/mobile kiosk, platform selector and analytics screenshots reviewed. The custom Juliana portrait is explicitly distinguished from the live stock female Tavus face.
+
+Testing used separate synthetic QA stores. The local presentation server remains on port 3000. No public deployment or real banking operation was performed. Alex’s core implementation, public knowledge and provider configuration were preserved. The root entry route opens the administrative selector; the kiosk page wrapper adds the user-requested discreet switcher.
+
+## Earlier verification
+
 # Verification — November 13, 2026
 
 - `npm run typecheck`: passed.

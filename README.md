@@ -1,6 +1,8 @@
-# OneSource AI Kiosk
+# Smart AI Kiosk — Alex + Juliana
 
-Next.js / TypeScript / Tailwind executive demo: a Tavus conversational avatar, bilingual patient check-in, and live receptionist handoff. **Synthetic data only.**
+Two independent experiences share the existing Next.js / TypeScript / Tailwind stack. Open `/platform` for the administrative selector or `/juliana` for Banco Interior’s new fictional banking experience. [Juliana setup, journeys and limits](experiences/juliana/README.md). Alex’s existing screens and provider configuration are preserved.
+
+Original healthcare experience: a Tavus conversational avatar, bilingual patient check-in, and live receptionist handoff. **Synthetic data only.**
 
 AI Kiosk presents Alex across browser-enabled TVs, tablets, kiosks, phones and web chat. WhatsApp is a channel integration option; it is not connected in this demo. The supplied OneSource SVG is used across all screens.
 

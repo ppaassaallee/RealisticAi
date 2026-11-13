@@ -1,0 +1,3232 @@
+[
+  {
+    "id": "DP-KB-001",
+    "topic": "remesas",
+    "question": "¿Qué es una remesa?",
+    "answer": "Es dinero que una persona envía a otra, frecuentemente a su familia en otro país. Elegí un proveedor verificable y revisá cuánto recibirá la persona, además del costo de enviar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-002",
+    "topic": "remesas",
+    "question": "¿Qué necesito revisar antes de enviar dinero a Guatemala?",
+    "answer": "Confirmá nombre del destinatario, país, modalidad de entrega, moneda, costo total y canal de atención. Los documentos y límites dependen del proveedor; solicitá sus condiciones antes de autorizar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-003",
+    "topic": "remesas",
+    "question": "¿Es mejor enviar a una cuenta o cobrar en efectivo?",
+    "answer": "Compará acceso del destinatario, costos, distancia y seguridad. El depósito requiere datos correctos de la cuenta; el efectivo exige un punto autorizado. Ninguna modalidad es siempre mejor para todas las familias.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-004",
+    "topic": "remesas",
+    "question": "¿Cómo se calcula cuánto recibe mi familia?",
+    "answer": "Compará el monto neto que el proveedor muestra antes de confirmar. La comisión y el tipo de cambio pueden cambiar el resultado; un anuncio de comisión cero no garantiza el mejor monto recibido.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-005",
+    "topic": "remesas",
+    "question": "¿Para qué sirve la referencia de una remesa?",
+    "answer": "Permite identificar el envío ante el proveedor. Guardala de forma privada y compartila solo con el destinatario por un canal confiable. No la publiques ni la ingreses en enlaces inesperados.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-006",
+    "topic": "remesas",
+    "question": "¿Qué hago si la remesa aparece pendiente?",
+    "answer": "Revisá el estado con el proveedor y conservá el comprobante. No prometo una hora de liberación: puede requerir revisión. Evitá repetir el envío sin aclarar si el primero sigue en proceso.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-007",
+    "topic": "remesas",
+    "question": "¿Qué hago si escribieron mal mi nombre?",
+    "answer": "Pedile al remitente que consulte cómo corregirlo con el proveedor original. No alterés documentos ni intentés cobrar a nombre de otra persona. El kiosco no puede modificar una remesa real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-008",
+    "topic": "remesas",
+    "question": "¿Puedo cobrar una remesa sin cuenta bancaria?",
+    "answer": "Algunos proveedores ofrecen entrega en efectivo. Confirmá que el envío admite esa modalidad y verificá punto, identificación y condiciones con el proveedor. Aquí no puedo garantizar que una remesa real esté disponible.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-009",
+    "topic": "remesas",
+    "question": "¿Puedo cobrar con el documento de un familiar?",
+    "answer": "No usés identidad ajena. Si el destinatario no puede acudir, el proveedor debe explicar si existe representación autorizada y qué documentación exige. No basta con tener la referencia.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-010",
+    "topic": "remesas",
+    "question": "¿La comisión siempre se descuenta del dinero recibido?",
+    "answer": "Depende del servicio contratado. Pedí un desglose de cuánto paga el remitente, posibles cargos y cuánto recibe la otra persona. No supongás que todas las remesadoras cobran igual.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-011",
+    "topic": "remesas",
+    "question": "¿Cómo comparo dos remesadoras?",
+    "answer": "Compará el mismo monto y momento: total que pagás, neto recibido, tiempo informado, modalidad de entrega y canal de reclamo. Conservá la cotización antes de decidir.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-012",
+    "topic": "remesas",
+    "question": "¿Puedo cancelar una remesa?",
+    "answer": "Consultá cuanto antes al proveedor que la emitió. La posibilidad de cancelación depende de su estado y condiciones; no puedo garantizar devolución ni cancelar desde este demo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-013",
+    "topic": "remesas",
+    "question": "¿Qué significa remesa no reclamada?",
+    "answer": "Indica que todavía no se registra su cobro según el proveedor. No significa que el dinero esté perdido o que se pueda cobrar sin límite de tiempo. Consultá vigencia y opciones oficiales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-014",
+    "topic": "remesas",
+    "question": "¿Dónde cobra alguien que vive lejos de una agencia?",
+    "answer": "Buscá puntos autorizados en el directorio del proveedor y confirmá servicios antes del viaje. Una ubicación cercana puede no manejar efectivo o esa remesadora; las ubicaciones del demo son ficticias.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-015",
+    "topic": "remesas",
+    "question": "¿Cómo evito pagar dos veces por una remesa?",
+    "answer": "Conservá el comprobante y verificá el estado del primer intento antes de repetir. Un error de pantalla no demuestra que el proveedor rechazó el envío.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-016",
+    "topic": "remesas",
+    "question": "¿Qué debo guardar después de enviar?",
+    "answer": "Guardá comprobante, fecha, proveedor, monto y referencia en un lugar privado. Son útiles para aclaraciones; evitá dejar fotos o documentos abiertos en un kiosco público.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-017",
+    "topic": "remesas",
+    "question": "¿Qué hago si aparece cobrada pero mi familia no recibió?",
+    "answer": "Contactá de inmediato al proveedor mediante un canal verificado y pedí investigación con referencia. No acuses a alguien basándote solo en un mensaje; este asistente no verifica movimientos reales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-018",
+    "topic": "remesas",
+    "question": "¿Puedo enviar a mi propia cuenta desde el extranjero?",
+    "answer": "Preguntá al proveedor si admite esa modalidad y qué datos solicita. Verificá titularidad, moneda y costos; no ingresés números reales de cuenta en esta demostración.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-019",
+    "topic": "remesas",
+    "question": "¿Podés confirmar una remesa real con mi código?",
+    "answer": "No. Este demo solo consulta referencias sintéticas. Para un envío real, usá el canal oficial del proveedor; no compartás aquí documentos, números bancarios ni referencias reales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-020",
+    "topic": "remesas",
+    "question": "¿Me garantizás que llegará hoy?",
+    "answer": "No puedo garantizar disponibilidad. El plazo válido lo informa el proveedor para el envío específico, y puede cambiar por revisión o incidencias. Revisalo antes de autorizar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-021",
+    "topic": "cuentas",
+    "question": "¿Cuál es la diferencia entre cuenta de ahorro y monetaria?",
+    "answer": "Una cuenta de ahorro suele apoyar guardar dinero; una monetaria facilita movimientos cotidianos según su contrato. Compará disponibilidad, cargos, medios de pago y condiciones reales antes de elegir.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-022",
+    "topic": "cuentas",
+    "question": "¿Una cuenta digital es distinta de mi dinero en el banco?",
+    "answer": "Digital describe principalmente cómo se abre o utiliza la cuenta. Verificá qué entidad la ofrece, su contrato, canales de soporte y condiciones; una aplicación atractiva no demuestra autorización.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-023",
+    "topic": "cuentas",
+    "question": "¿Qué debo preguntar al abrir una cuenta?",
+    "answer": "Preguntá por documentos aceptados, costos, saldo mínimo, límites, acceso al dinero y cierre. Pedí la información por escrito. No hay requisitos oficiales aprobados de Banco Interior en este demo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-024",
+    "topic": "cuentas",
+    "question": "¿Qué significa ser titular de una cuenta?",
+    "answer": "Es la persona identificada como dueña de la relación bancaria conforme al contrato. No compartás tu acceso para que otra persona use tu identidad; una autorización formal tiene reglas propias.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-025",
+    "topic": "cuentas",
+    "question": "¿Qué es un beneficiario de cuenta?",
+    "answer": "Es una designación que puede tener efectos según contrato y ley aplicable. Consultá al banco cómo registrarlo, actualizarlo y qué documentación requiere; no equivale a compartir tu contraseña.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-026",
+    "topic": "cuentas",
+    "question": "¿Qué es un saldo mínimo?",
+    "answer": "Es una condición que algunos productos establecen para apertura, mantenimiento o beneficios. Puede tener consecuencias diferentes. Solicitá el monto y las reglas del producto concreto; aquí no hay cifras oficiales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-027",
+    "topic": "cuentas",
+    "question": "¿Cómo reviso los cargos de una cuenta?",
+    "answer": "Consultá el tarifario y el estado de cuenta. Identificá concepto, fecha y monto; si no reconocés un cobro, pedí explicación formal al banco y conservá el número de gestión.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-028",
+    "topic": "cuentas",
+    "question": "¿Puedo separar el dinero de mi negocio?",
+    "answer": "Llevar registros separados ayuda a distinguir ventas, costos y gastos familiares. Compará productos y obligaciones con un asesor; el demo no determina qué cuenta corresponde legalmente a tu negocio.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-029",
+    "topic": "cuentas",
+    "question": "¿Puede un menor abrir una cuenta?",
+    "answer": "Depende del producto, la edad y las reglas de representación aplicables. Debe confirmarlo la entidad. No solicito documentos de menores ni puedo afirmar que Banco Interior ofrece una cuenta juvenil real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-030",
+    "topic": "cuentas",
+    "question": "¿Cómo reviso un estado de cuenta?",
+    "answer": "Compará saldo inicial, abonos, cargos y saldo final con tus comprobantes. Reportá diferencias por un canal oficial. No subás estados reales a este kiosco de demostración.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-031",
+    "topic": "cuentas",
+    "question": "¿Qué diferencia hay entre saldo disponible y contable?",
+    "answer": "El saldo disponible suele reflejar lo que podés usar considerando retenciones; el contable registra movimientos contabilizados. El banco debe explicar su presentación y cualquier diferencia en tu cuenta.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-032",
+    "topic": "cuentas",
+    "question": "¿Puedo usar la cuenta de otra persona para recibir dinero?",
+    "answer": "Puede generar problemas de titularidad, identificación y control. Consultá una alternativa a tu nombre o una autorización formal. No prestés ni alquilés cuentas a desconocidos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-033",
+    "topic": "cuentas",
+    "question": "¿Qué hago si perdí mi tarjeta?",
+    "answer": "Buscá el canal oficial del emisor y solicitá bloqueo cuanto antes. Revisá movimientos y conservá la gestión. Crear un caso aquí no bloquea una tarjeta real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-034",
+    "topic": "cuentas",
+    "question": "¿Cómo recupero el acceso a la banca digital?",
+    "answer": "Usá el proceso oficial de recuperación del banco desde una dirección verificada. Nunca entregués contraseña ni códigos de un solo uso a quien te contacte; Juliana no los necesita.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-035",
+    "topic": "cuentas",
+    "question": "¿Cómo cambio mis datos de contacto?",
+    "answer": "Solicitá la actualización por un canal autenticado del banco y verificá que quede registrada. No compartás tu nuevo teléfono o dirección en una conversación pública si no hay un proceso autorizado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-036",
+    "topic": "cuentas",
+    "question": "¿Cómo cierro una cuenta?",
+    "answer": "Pedí al banco sus pasos, cargos pendientes y tratamiento de pagos vinculados. Conservá confirmación escrita del cierre. Retirar todo el saldo no significa necesariamente que la cuenta quedó cerrada.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-037",
+    "topic": "cuentas",
+    "question": "¿Una tarjeta de débito es lo mismo que crédito?",
+    "answer": "La de débito normalmente utiliza fondos disponibles de tu cuenta; la de crédito permite usar una línea que debés pagar según contrato. Ambas requieren proteger acceso y revisar movimientos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-038",
+    "topic": "cuentas",
+    "question": "¿Qué hago si un cajero retuvo mi tarjeta?",
+    "answer": "No aceptés ayuda de desconocidos ni revelés el PIN. Contactá al emisor por su canal oficial y seguí sus indicaciones de bloqueo y reposición. Anotá ubicación y hora sin fotografiar datos sensibles.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-039",
+    "topic": "cuentas",
+    "question": "¿Una cuenta conjunta permite que cualquiera retire?",
+    "answer": "Depende de las reglas de firma del contrato. Pedí que expliquen quién puede operar, cómo se autoriza y qué sucede al cambiar titulares. No supongás que todas las cuentas conjuntas funcionan igual.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-040",
+    "topic": "cuentas",
+    "question": "¿Podés mostrar el saldo de mi cuenta?",
+    "answer": "No consulto saldos reales. Las cuentas de esta experiencia son sintéticas y están separadas de Alex. Para tu saldo, usá un canal autenticado del banco real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-041",
+    "topic": "servicios en caja",
+    "question": "¿Cómo preparo un pago de electricidad?",
+    "answer": "Revisá proveedor, referencia y período en la factura. Antes de autorizar, comprobá concepto y monto en el canal oficial. Aquí solo se usan referencias de prueba y el resultado es simulado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-042",
+    "topic": "servicios en caja",
+    "question": "¿Qué necesito revisar para pagar agua?",
+    "answer": "Confirmá empresa o municipalidad, número de servicio y período facturado. La referencia puede variar entre proveedores. No inventaré cobertura de pagos ni un convenio de Banco Interior.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-043",
+    "topic": "servicios en caja",
+    "question": "¿Cómo evito pagar el teléfono equivocado?",
+    "answer": "Verificá operador, número o referencia y nombre mostrado cuando esté disponible. Leé el resumen antes de confirmar; no repitás el pago si el primer resultado quedó pendiente.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-044",
+    "topic": "servicios en caja",
+    "question": "¿Puedo pagar internet desde el kiosco?",
+    "answer": "En el demo podés recorrer un pago simulado. Para un pago real hay que confirmar proveedor admitido, referencia y canal autorizado; no hay conexión real con empresas de internet.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-045",
+    "topic": "servicios en caja",
+    "question": "¿Qué debo verificar al hacer un depósito?",
+    "answer": "Revisá entidad, cuenta destinataria, titular mostrado, moneda y monto antes de entregar efectivo o confirmar. Conservá el comprobante. Este kiosco no recibe dinero físico.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-046",
+    "topic": "servicios en caja",
+    "question": "¿Puedo retirar efectivo aquí?",
+    "answer": "No. Este demo no tiene dispensador ni integración certificada de efectivo. Puedo orientarte o solicitar asistencia; un resultado en pantalla no autoriza entregar ni retirar dinero real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-047",
+    "topic": "servicios en caja",
+    "question": "¿Cómo pago una cuota de préstamo?",
+    "answer": "Usá la referencia y el canal indicados por el acreedor. Verificá período, monto y aplicación del pago; un abono no siempre se aplica como esperás. Pedí comprobante.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-048",
+    "topic": "servicios en caja",
+    "question": "¿Qué hago si una operación fue rechazada?",
+    "answer": "Leé el mensaje sin asumir la causa. Revisá con el proveedor si hubo débito antes de reintentar. No ingresés credenciales en enlaces ofrecidos por desconocidos para solucionar el rechazo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-049",
+    "topic": "servicios en caja",
+    "question": "¿Qué significa pago pendiente?",
+    "answer": "El sistema aún no confirmó un resultado definitivo. Conservá la referencia de gestión y consultá el canal oficial. No lo considerés pagado ni vuelvas a pagar sin aclarar el estado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-050",
+    "topic": "servicios en caja",
+    "question": "¿Una captura de pantalla demuestra que me pagaron?",
+    "answer": "Por sí sola no. Confirmá el abono en tu propio canal autenticado, no en una imagen enviada por terceros. Las capturas pueden alterarse.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-051",
+    "topic": "servicios en caja",
+    "question": "¿Qué debe mostrar un comprobante útil?",
+    "answer": "Conviene que identifique fecha, concepto, monto, referencia y estado. Un comprobante de solicitud o simulación no demuestra liquidación de una operación real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-052",
+    "topic": "servicios en caja",
+    "question": "¿Puedo pagar después del vencimiento?",
+    "answer": "Depende del proveedor y sus reglas sobre recargos o suspensión. Consultá el monto actualizado en su canal oficial. No puedo prometer que un pago tardío evitará una interrupción.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-053",
+    "topic": "servicios en caja",
+    "question": "¿Qué hago si pagué dos veces un servicio?",
+    "answer": "Conservá ambos comprobantes y consultá al proveedor o banco cómo revisar la duplicidad. No puedo garantizar reverso automático ni aplicar el segundo pago a otro período.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-054",
+    "topic": "servicios en caja",
+    "question": "¿La caja comunitaria tiene los mismos servicios que una agencia?",
+    "answer": "No necesariamente. Cada punto puede tener servicios, horarios, límites y disponibilidad diferentes. Confirmalos antes de desplazarte o entregar dinero.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-055",
+    "topic": "servicios en caja",
+    "question": "¿Podés localizar un punto real cercano?",
+    "answer": "Este demo muestra ubicaciones ficticias. Para una ubicación real, consultá el directorio oficial del proveedor y verificá el servicio deseado; no presentaré un punto de prueba como agencia real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-056",
+    "topic": "servicios en caja",
+    "question": "¿Qué hago si no me entregaron comprobante?",
+    "answer": "Solicitalo por el canal oficial y anotá fecha, lugar y concepto. Verificá el movimiento antes de repetir. No compartás públicamente imágenes que incluyan datos completos de tu cuenta.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-057",
+    "topic": "servicios en caja",
+    "question": "¿Puedo dejar efectivo al encargado mientras vuelve internet?",
+    "answer": "No des por ejecutada una operación sin verificación y comprobante autorizado. Este kiosco no acepta efectivo ni procesa pagos sin conexión; buscá atención formal del punto.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-058",
+    "topic": "servicios en caja",
+    "question": "¿Cómo sé si mi operación simulada terminó?",
+    "answer": "Revisá el resultado que devuelve el demo. Una referencia de simulación solo acredita el recorrido de prueba: no mueve dinero, no paga facturas y no cobra remesas.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-059",
+    "topic": "crédito",
+    "question": "¿Qué es un préstamo?",
+    "answer": "Es dinero recibido con obligación de devolverlo según condiciones acordadas. Antes de solicitarlo, revisá intereses, cargos, plazo, garantías y total estimado a pagar, además de la cuota.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-060",
+    "topic": "crédito",
+    "question": "¿Qué diferencia hay entre interés y capital?",
+    "answer": "El capital es el dinero prestado pendiente de devolver; el interés es un costo calculado según el contrato. La cuota también puede incluir otros cargos que debés revisar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-061",
+    "topic": "crédito",
+    "question": "¿Una cuota más baja significa un crédito más barato?",
+    "answer": "No siempre. Un plazo mayor puede bajar la cuota y aumentar el costo total. Compará la suma de pagos y cargos con el mismo monto prestado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-062",
+    "topic": "crédito",
+    "question": "¿Qué es capacidad de pago?",
+    "answer": "Es la posibilidad de cubrir una obligación con ingresos sostenibles después de gastos necesarios y otras deudas. Un cálculo educativo ayuda a ordenar números, pero no aprueba un crédito.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-063",
+    "topic": "crédito",
+    "question": "¿Cómo funciona el simulador de crédito?",
+    "answer": "Usa monto, plazo y tasa de ejemplo para estimar una cuota. No incluye necesariamente seguros, impuestos ni cargos. El resultado no es cotización, elegibilidad ni oferta contractual.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-064",
+    "topic": "crédito",
+    "question": "¿Qué significa tasa anual?",
+    "answer": "Expresa una tasa con referencia a un año. Para comparar productos, preguntá si es nominal o efectiva, cómo se calcula y qué otros costos existen; no comparés porcentajes sin contexto.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-065",
+    "topic": "crédito",
+    "question": "¿Qué es una garantía de crédito?",
+    "answer": "Es un respaldo que el acreedor puede exigir según contrato. Puede tener consecuencias sobre bienes o personas. Pedí explicación profesional antes de comprometer patrimonio.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-066",
+    "topic": "crédito",
+    "question": "¿Qué implica ser fiador?",
+    "answer": "Puede generar obligación de responder por una deuda ajena conforme al contrato. Leé el alcance, pedí asesoría y no firmés solo por presión familiar o comercial.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-067",
+    "topic": "crédito",
+    "question": "¿Para qué sirve el historial crediticio?",
+    "answer": "Registra información sobre comportamiento de obligaciones según las fuentes aplicables. La entidad debe evaluar la solicitud; un buen historial no garantiza aprobación ni una tasa específica.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-068",
+    "topic": "crédito",
+    "question": "¿Qué hago si ya no puedo pagar mi préstamo?",
+    "answer": "Contactá al acreedor temprano y explicá tu situación por un canal seguro. Pedí opciones por escrito; no se garantiza reestructuración y contratar otra deuda puede empeorar el problema.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-069",
+    "topic": "crédito",
+    "question": "¿Qué es reestructurar una deuda?",
+    "answer": "Es modificar condiciones con acuerdo del acreedor. Evaluá nueva cuota, plazo, costo total y efectos antes de aceptar. El demo no negocia ni cambia contratos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-070",
+    "topic": "crédito",
+    "question": "¿Pagar anticipadamente siempre ahorra intereses?",
+    "answer": "Depende de cómo se aplica el abono y del contrato. Pedí cálculo de liquidación, cargos y confirmación de aplicación a capital antes de pagar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-071",
+    "topic": "crédito",
+    "question": "¿Un microcrédito sirve para cualquier negocio?",
+    "answer": "No necesariamente. Evaluá ingresos, ciclos de venta, costo y capacidad de pago. La denominación microcrédito no sustituye revisar las condiciones ni demuestra adecuación a tu caso.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-072",
+    "topic": "crédito",
+    "question": "¿Cómo planifico un crédito agrícola?",
+    "answer": "Considerá cosecha, estacionalidad, costos y escenarios de ingresos menores. Compará fechas de pago con tu flujo real y buscá asesoría; el simulador no evalúa riesgos agrícolas.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-073",
+    "topic": "crédito",
+    "question": "¿Qué debo calcular para financiar mercadería?",
+    "answer": "Estimá costo de compra, margen, velocidad de venta y gastos adicionales. Si la cuota vence antes de vender, puede faltar efectivo. No tomés una proyección como ingreso garantizado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-074",
+    "topic": "crédito",
+    "question": "¿Un crédito de vivienda paga todos los gastos de una casa?",
+    "answer": "Depende del producto. Además del precio pueden existir trámites, impuestos, seguros y mantenimiento. Pedí un desglose autorizado; no tengo condiciones reales de Banco Interior.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-075",
+    "topic": "crédito",
+    "question": "¿Puedo consultar si ya aprobaron mi crédito?",
+    "answer": "No consulto expedientes reales. Una referencia demostrativa solo registra una solicitud de prueba. La aprobación real requiere evaluación y confirmación del acreedor autorizado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-076",
+    "topic": "crédito",
+    "question": "¿Conviene pedir dinero para pagar otra deuda?",
+    "answer": "Depende de costos y capacidad de pago. Compará el total, plazo y garantías, no solo la cuota nueva. Buscá asesoría antes de aumentar deuda o comprometer bienes.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-077",
+    "topic": "ahorro",
+    "question": "¿Cómo empiezo a ahorrar para mi casita en Guatemala?",
+    "answer": "Definí una meta, lo que ya tenés y un plazo. Dividí lo que falta entre los meses disponibles y revisá si el aporte cabe en tu presupuesto; podemos hacer un ejemplo educativo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-078",
+    "topic": "ahorro",
+    "question": "¿Cómo calculo el ahorro mensual sin intereses?",
+    "answer": "Restá el ahorro actual de la meta y dividí el faltante entre los meses. Por ejemplo, Q12,000 en 12 meses desde cero requiere Q1,000 mensuales. No incluye inflación ni rendimientos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-079",
+    "topic": "ahorro",
+    "question": "¿Qué hago si el aporte mensual no me alcanza?",
+    "answer": "Podés ajustar la meta, ampliar el plazo o revisar gastos que decidás reducir. No hace falta aceptar un préstamo para continuar una conversación de ahorro.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-080",
+    "topic": "ahorro",
+    "question": "¿Cómo hago un presupuesto familiar?",
+    "answer": "Anotá ingresos y gastos, separá compromisos necesarios de gastos ajustables y reservá una cantidad realista para metas. Revisá el plan cuando cambien los ingresos; no hay una proporción universal.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-081",
+    "topic": "ahorro",
+    "question": "¿Cómo organizo una remesa entre gastos y ahorro?",
+    "answer": "Acordá prioridades familiares antes de recibirla: necesidades, obligaciones y una meta de ahorro. Usá montos que se adapten a tu situación; no impongo un porcentaje fijo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-082",
+    "topic": "ahorro",
+    "question": "¿Qué es un fondo de emergencia?",
+    "answer": "Es una reserva para gastos imprevistos que buscás mantener accesible y separada de compras planificadas. El monto adecuado depende de tus necesidades y estabilidad de ingresos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-083",
+    "topic": "ahorro",
+    "question": "¿Es mejor ahorrar semanalmente o cada mes?",
+    "answer": "Elegí una frecuencia que coincida con tus ingresos y te resulte sostenible. Lo importante es registrar aportes y revisar avances; no necesitás una cantidad grande para comenzar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-084",
+    "topic": "ahorro",
+    "question": "¿Cómo ahorro si mis ingresos varían?",
+    "answer": "Partí de gastos esenciales y un ingreso conservador. En meses mejores podés sumar a la reserva. No comprometás una cuota fija que solo podés cubrir en tu mejor mes.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-085",
+    "topic": "ahorro",
+    "question": "¿Cómo separo el ahorro del dinero diario?",
+    "answer": "Llevá registros o separaciones claras para cada objetivo y compará opciones seguras. Revisá costos y acceso al dinero antes de contratar una cuenta o automatizar aportes.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-086",
+    "topic": "ahorro",
+    "question": "¿Cómo planifico gastos de estudio de mis hijos?",
+    "answer": "Listá matrícula, materiales, transporte y fechas previstas. Calculá aportes con tiempo y revisá costos periódicamente. No compartás datos de menores para hacer un ejemplo educativo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-087",
+    "topic": "ahorro",
+    "question": "¿Cómo ahorro para reparar mi casa?",
+    "answer": "Pedí presupuestos, priorizá necesidades y dividí el proyecto en etapas. Incluí un margen para cambios que vos elijás; el simulador no verifica costos de construcción.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-088",
+    "topic": "ahorro",
+    "question": "¿Cómo ahorro para empezar un negocio?",
+    "answer": "Separá inversión inicial, gastos de operación y reserva familiar. Probá escenarios de ventas bajas antes de comprometer todo el ahorro; ninguna proyección garantiza ganancias.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-089",
+    "topic": "ahorro",
+    "question": "¿Qué diferencia hay entre ahorrar e invertir?",
+    "answer": "Ahorrar busca reservar dinero; invertir implica destinarlo buscando resultados con riesgos que varían. Revisá liquidez, costos y posibilidad de pérdidas antes de elegir; no prometo rendimientos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-090",
+    "topic": "ahorro",
+    "question": "¿Cómo reviso si voy cumpliendo mi meta?",
+    "answer": "Compará ahorro acumulado con el plan y los meses restantes. Si cambió el objetivo, recalculá sin culpas. Un retraso no obliga a contratar un producto financiero.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-091",
+    "topic": "ahorro",
+    "question": "¿Puedo hacer un plan con mi familia en otro país?",
+    "answer": "Sí, pueden acordar meta, aportes y quién llevará registros. No compartan contraseñas ni credenciales; cualquier acceso a cuentas debe seguir las autorizaciones del banco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-092",
+    "topic": "ahorro",
+    "question": "¿Cómo evito gastar por impulso?",
+    "answer": "Dale tiempo a compras no urgentes, revisá tu presupuesto y compará con la meta que elegiste. La decisión es tuya; el asistente no debe presionarte ni juzgarte.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-093",
+    "topic": "ahorro",
+    "question": "¿Mi simulación incluye intereses de ahorro?",
+    "answer": "Solo si el cálculo lo indica expresamente con una tasa de ejemplo. Sin tasa aprobada, un plan de aportes no promete rendimiento ni representa un producto del banco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-094",
+    "topic": "ahorro",
+    "question": "¿Qué hago cuando alcanzo una meta de ahorro?",
+    "answer": "Verificá los gastos reales antes de usar el dinero y conservá una reserva si la necesitás. Podés definir una nueva meta; no hay obligación de contratar otro producto.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-095",
+    "topic": "migrantes",
+    "question": "¿Cómo ayudo a mi familia desde Estados Unidos sin perder control?",
+    "answer": "Acordá necesidades y un presupuesto, compará canales verificables y conservá comprobantes. No hace falta que revelés tu estatus migratorio para recibir orientación financiera general.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-096",
+    "topic": "migrantes",
+    "question": "¿Cómo preparo un ahorro para volver a Guatemala?",
+    "answer": "Separá traslado, gastos iniciales, documentación y una reserva. Usá costos estimados identificados como tales y revisalos antes de decidir. No puedo asegurar empleo, crédito ni apoyo estatal.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-097",
+    "topic": "migrantes",
+    "question": "¿Qué debo revisar antes de comprar un terreno a distancia?",
+    "answer": "Pedí verificación profesional de titularidad, gravámenes, representación y contrato antes de pagar. No sustituyo a un abogado o notario y no verifico propiedades desde este kiosco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-098",
+    "topic": "migrantes",
+    "question": "¿Puede un familiar administrar mis ahorros?",
+    "answer": "Una relación de confianza no sustituye controles y autorizaciones. Consultá opciones formales con la entidad y asesoría legal si corresponde; no compartás tu contraseña ni firmés documentos en blanco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-099",
+    "topic": "migrantes",
+    "question": "¿Cómo protejo a mi mamá cuando recibe remesas?",
+    "answer": "Acordá un canal familiar para confirmar envíos, evitá publicar referencias y verificá solicitudes urgentes por otra vía. Ayudar no significa quitarle control de sus decisiones.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-100",
+    "topic": "migrantes",
+    "question": "¿Me podés decir si debo regresar al país?",
+    "answer": "Esa decisión depende de circunstancias personales y jurídicas. Puedo ayudarte a ordenar un presupuesto y señalar fuentes oficiales; no doy asesoría migratoria personalizada ni predigo decisiones de autoridades.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-101",
+    "topic": "migrantes",
+    "question": "¿Tengo que decir mi estatus migratorio para hablar con Juliana?",
+    "answer": "No. Para educación general y recorridos sintéticos no es necesario. No ingresés expedientes, documentos de identidad ni detalles migratorios sensibles en un kiosco público.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-102",
+    "topic": "migrantes",
+    "question": "¿Podés enviar documentos al consulado por mí?",
+    "answer": "No hay integración consular en esta demostración. Podés consultar enlaces oficiales y pedir orientación humana; no afirmaré que se presentó una solicitud o documento.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-103",
+    "topic": "migrantes",
+    "question": "¿Puedo confiar en quien promete arreglar mis papeles por pagar hoy?",
+    "answer": "Desconfiá de presión, garantías absolutas y pedidos por canales no verificables. Confirmá con la autoridad o profesional habilitado antes de pagar; no te doy una conclusión legal sobre tu caso.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-104",
+    "topic": "migrantes",
+    "question": "¿Cómo preparo un negocio al retornar?",
+    "answer": "Identificá experiencia, clientes posibles, costos y necesidades del hogar. Hacé un presupuesto de prueba y buscá orientación competente; una idea de negocio no garantiza financiamiento.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-105",
+    "topic": "migrantes",
+    "question": "¿Cómo mantengo mis documentos seguros mientras busco orientación?",
+    "answer": "Usá canales oficiales, entregá solo lo necesario y evitá subir copias a chats públicos. Si una institución pide documentos, confirmá primero identidad del receptor y finalidad.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-106",
+    "topic": "migrantes",
+    "question": "¿Puedo recibir orientación sin saber leer bien?",
+    "answer": "Sí. Podés pedir explicaciones cortas, usar voz cuando esté disponible o solicitar una persona. No necesitás contar información íntima para que te expliquen una opción.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-107",
+    "topic": "migrantes",
+    "question": "¿Dónde busco orientación oficial al retornar a Guatemala?",
+    "answer": "El IGM publica el Plan Retorno al Hogar para orientar y vincular a personas retornadas con servicios. Consultá su portal para opciones actuales; participar o recibir apoyo no se garantiza desde este kiosco.",
+    "source": "https://proteccion.igm.gob.gt/index.php/es/retorno",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-108",
+    "topic": "migrantes",
+    "question": "¿Hay orientación para empleo o formación al retornar?",
+    "answer": "El Plan Retorno al Hogar describe derivaciones a programas y oportunidades. Revisá elegibilidad y disponibilidad directamente con el IGM; Banco Interior no asigna plazas ni certificaciones.",
+    "source": "https://proteccion.igm.gob.gt/index.php/es/retorno",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-109",
+    "topic": "migrantes",
+    "question": "¿Dónde pido ayuda institucional para mi familia migrante?",
+    "answer": "CONAMIGUA publica canales y servicios de atención a migrantes, familias y personas retornadas. Revisá su sitio oficial para la gestión concreta; el demo no presenta solicitudes ante esa institución.",
+    "source": "https://conamigua.gob.gt/",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-110",
+    "topic": "migrantes",
+    "question": "¿Dónde consulto trámites consulares de Guatemala?",
+    "answer": "El portal de MINEX reúne gestiones desde el exterior y acceso al directorio consular. Elegí país y trámite allí; Banco Interior no es autoridad consular.",
+    "source": "https://www.minex.gob.gt/index.php/din/14-alrededor-del-mundo",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-111",
+    "topic": "migrantes",
+    "question": "¿Dónde consulto cómo tramitar mi DPI en el extranjero?",
+    "answer": "MINEX ofrece información consular sobre DPI. Verificá en el canal oficial requisitos y sede para tu caso; no ingresés aquí tu número de identificación.",
+    "source": "https://www.minex.gob.gt/index.php/din/14-alrededor-del-mundo",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-112",
+    "topic": "migrantes",
+    "question": "¿Dónde reviso el trámite de pasaporte?",
+    "answer": "Consultá el servicio de pasaporte en MINEX y confirmá con la sede correspondiente. No tengo tarifas, citas ni plazos verificados para tu jurisdicción.",
+    "source": "https://www.minex.gob.gt/index.php/din/14-alrededor-del-mundo",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-113",
+    "topic": "migrantes",
+    "question": "¿Dónde consulto una inscripción de registro civil desde el exterior?",
+    "answer": "MINEX publica orientación de inscripciones consulares. Revisá el trámite y confirmá documentos con la sede; no puedo determinar efectos legales ni presentar la inscripción.",
+    "source": "https://www.minex.gob.gt/index.php/din/14-alrededor-del-mundo",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-114",
+    "topic": "migrantes",
+    "question": "¿Puedo conseguir una cita consular aquí?",
+    "answer": "No. Abrí el portal oficial y verificá la modalidad de atención vigente para tu sede y trámite. No tengo calendario ni disponibilidad consular.",
+    "source": "https://www.minex.gob.gt/index.php/din/14-alrededor-del-mundo",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-115",
+    "topic": "migrantes",
+    "question": "¿Qué necesito para una tarjeta de identificación consular?",
+    "answer": "Confirmá si la sede emite ese documento y qué exige en su canal oficial. No sustituyo esa verificación por una lista genérica ni afirmo que todas las sedes lo ofrecen.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-116",
+    "topic": "migrantes",
+    "question": "¿Cómo registro a un hijo nacido en otro país?",
+    "answer": "Consultá la gestión correspondiente con MINEX y la autoridad registral. Los documentos y efectos dependen del caso; no recopilo datos de menores ni doy asesoría de nacionalidad.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-117",
+    "topic": "migrantes",
+    "question": "¿Podés redactar un poder para comprar mi casa?",
+    "answer": "Necesitás asesoría legal competente sobre representación y requisitos. Puedo ayudarte a preparar preguntas, pero no emitir ni validar poderes o documentos notariales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-118",
+    "topic": "migrantes",
+    "question": "¿Cómo encuentro un consulado móvil cerca de mí?",
+    "answer": "Revisá los anuncios oficiales de MINEX y de la sede que te corresponde. No uso fechas antiguas como calendario vigente ni garantizo que una jornada esté disponible.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "consular",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-119",
+    "topic": "seguridad",
+    "question": "¿Qué es phishing?",
+    "answer": "Es un engaño que busca que entregués información o autoricés acciones mediante mensajes que aparentan ser confiables. Abrí el canal oficial por tu cuenta en vez de seguir un enlace inesperado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-120",
+    "topic": "seguridad",
+    "question": "¿Juliana me puede pedir mi PIN?",
+    "answer": "No. No compartás PIN, contraseña, CVV ni códigos de verificación con Juliana o con quien diga ayudarte. Para una pregunta general no se necesitan esos secretos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-121",
+    "topic": "seguridad",
+    "question": "¿Debo dar un código OTP para cancelar una transferencia?",
+    "answer": "No se lo dictés a una persona que te contactó. Un código puede autorizar acceso u operaciones. Interrumpí la conversación y verificá la situación con el banco por un canal independiente.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-122",
+    "topic": "seguridad",
+    "question": "¿Cómo reconozco un sitio bancario sospechoso?",
+    "answer": "Revisá la dirección completa y accedé desde un enlace oficial conocido. Un candado o logotipo por sí solo no demuestra que el sitio pertenezca al banco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-123",
+    "topic": "seguridad",
+    "question": "¿Qué hago si un familiar pide dinero urgente por un número nuevo?",
+    "answer": "Confirmá su identidad por un canal que ya conozcas antes de enviar. Las cuentas y voces pueden ser suplantadas; la presión por actuar rápido es una señal para verificar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-124",
+    "topic": "seguridad",
+    "question": "¿Es seguro instalar una aplicación para que me ayuden con el banco?",
+    "answer": "No instales acceso remoto por indicación de desconocidos ni compartás pantalla con datos bancarios. Consultá soporte oficial; una supuesta asistencia puede permitir control de tu dispositivo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-125",
+    "topic": "seguridad",
+    "question": "¿Qué hago si entregué mi contraseña a un estafador?",
+    "answer": "Contactá al banco desde un canal verificado, solicitá medidas de protección y cambiá accesos desde un dispositivo confiable según sus indicaciones. No pegues aquí la contraseña comprometida.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-126",
+    "topic": "seguridad",
+    "question": "¿Qué hago si veo una transferencia que no reconozco?",
+    "answer": "Contactá cuanto antes al banco, conservá la evidencia y pedí investigación y medidas de protección. Un caso en el demo no revierte, congela ni denuncia formalmente una transferencia.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-127",
+    "topic": "seguridad",
+    "question": "¿Crear un caso de fraude aquí bloquea mi tarjeta?",
+    "answer": "No. Solo crea una solicitud demostrativa de asistencia si el backend la confirma. Para bloquear una tarjeta real, usá el canal oficial del emisor sin esperar atención del demo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-128",
+    "topic": "seguridad",
+    "question": "¿Puedo prestar mi cuenta a cambio de una comisión?",
+    "answer": "No entregués control de tu cuenta a desconocidos. Podrías quedar involucrado en movimientos que no entendés y perder dinero. Buscá asesoría si ya compartiste acceso.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-129",
+    "topic": "seguridad",
+    "question": "¿Cómo protejo mi teléfono si lo perdí?",
+    "answer": "Usá las opciones oficiales del dispositivo y operador para proteger el acceso, y avisá al banco por un canal verificado. No compartás códigos con quien prometa recuperarlo.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-130",
+    "topic": "seguridad",
+    "question": "¿Qué es un cambio fraudulento de SIM?",
+    "answer": "Un atacante puede intentar tomar control del número telefónico para recibir comunicaciones. Si perdés servicio inesperadamente junto con señales sospechosas, verificá con tu operador y avisá al banco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-131",
+    "topic": "seguridad",
+    "question": "¿Me devolverán el dinero de una estafa?",
+    "answer": "No puedo garantizarlo. Reportá cuanto antes al proveedor y a las autoridades competentes, conservando evidencia. Desconfiá de quien prometa recuperar fondos si primero le pagás.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-132",
+    "topic": "seguridad",
+    "question": "¿Cómo guardo evidencia de un posible fraude?",
+    "answer": "Conservá mensajes, comprobantes y referencias de forma privada. No los publiques con datos personales; compartilos solo por canales oficiales durante una investigación.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-133",
+    "topic": "seguridad",
+    "question": "¿Puedo confiar en un código QR pegado sobre el kiosco?",
+    "answer": "Verificá con personal autorizado antes de usarlo. Un QR puede dirigir a un sitio distinto del esperado; revisá destino y no ingresés secretos en enlaces desconocidos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-134",
+    "topic": "seguridad",
+    "question": "¿Es seguro hacer banca en una red pública?",
+    "answer": "Evitá operar si no podés confiar en el dispositivo o la conexión. Usá aplicaciones y canales oficiales, mantené el equipo actualizado y nunca guardés credenciales en un kiosco compartido.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-135",
+    "topic": "seguridad",
+    "question": "¿Qué hago si alguien me presiona para transferir?",
+    "answer": "Detené la operación y buscá ayuda por una vía segura. No necesitás completar el pago para salir de esta pantalla. Si hay peligro físico inmediato, buscá asistencia local de emergencia.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-136",
+    "topic": "seguridad",
+    "question": "¿Cómo ayudo a una persona mayor sin quitarle control?",
+    "answer": "Explicá cada paso con calma, pedí permiso y respetá su decisión. No le pidás contraseñas ni firmés por ella sin autorización formal; ofrecé atención humana si lo prefiere.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-137",
+    "topic": "seguridad",
+    "question": "¿Una oferta de inversión con ganancias garantizadas es confiable?",
+    "answer": "No tomés una promesa como prueba. Verificá entidad, autorización, riesgos y condiciones por canales independientes. Rendimientos extraordinarios con presión para pagar merecen especial cautela.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-138",
+    "topic": "seguridad",
+    "question": "¿Qué hago antes de dejar el kiosco?",
+    "answer": "Finalizá la sesión y retirate solo cuando vuelva al inicio. No dejés documentos o comprobantes; evitá ingresar información real en una demostración pública.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-139",
+    "topic": "ferias y productos",
+    "question": "¿Banco Interior es un banco real?",
+    "answer": "Banco Interior es una marca ficticia creada para esta demostración. Juliana es una asistente virtual; sus productos, referencias y operaciones de prueba no representan una entidad bancaria autorizada.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-140",
+    "topic": "ferias y productos",
+    "question": "¿Qué productos reales vende Banco Interior?",
+    "answer": "No existe un catálogo institucional real aprobado. Puedo mostrar ejemplos ficticios y explicar conceptos; cualquier tasa, requisito o beneficio contractual queda pendiente de aprobación.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-141",
+    "topic": "ferias y productos",
+    "question": "¿Qué cuenta me recomienda Banco Interior?",
+    "answer": "No hay recomendación personalizada ni productos reales aprobados. Podemos comparar necesidades y ejemplos demostrativos; un asesor autorizado debe confirmar condiciones antes de cualquier contratación.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-142",
+    "topic": "ferias y productos",
+    "question": "¿Cuáles son las tasas y comisiones de Banco Interior?",
+    "answer": "Están pendientes de aprobación institucional. No inventaré cifras oficiales. Si un simulador usa números, deben identificarse como supuestos educativos y no como una oferta.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-143",
+    "topic": "ferias y productos",
+    "question": "¿Cuánto debo depositar para abrir una cuenta de Banco Interior?",
+    "answer": "No existe un mínimo oficial aprobado para esta marca ficticia. No entregués dinero. La referencia del demo no abre una cuenta real ni crea un contrato.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-144",
+    "topic": "ferias y productos",
+    "question": "¿Qué documentos acepta Banco Interior para un crédito?",
+    "answer": "El catálogo institucional está pendiente de aprobación. Puedo sugerir preguntas para un asesor, pero no presentar documentos habituales como requisitos oficiales del banco.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-145",
+    "topic": "ferias y productos",
+    "question": "¿Banco Interior tiene seguro o protección de depósitos?",
+    "answer": "No hay una entidad bancaria real ni cobertura institucional verificable en este demo. No debe afirmarse afiliación, garantía estatal o protección contractual de fondos.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-146",
+    "topic": "ferias y productos",
+    "question": "¿Puedo contratar un producto en esta feria?",
+    "answer": "Solo podés recorrer simulaciones y solicitudes demostrativas. Una intención registrada no es contrato, aprobación, desembolso ni apertura real; no entregués dinero o documentos reales.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "institutional",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "PENDING_APPROVAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-147",
+    "topic": "ferias y productos",
+    "question": "¿Para qué sirve una solicitud de contacto en el demo?",
+    "answer": "Permite probar un seguimiento con consentimiento explícito y datos ficticios. Crear una referencia no significa que un ejecutivo real llamó ni autoriza usos comerciales diferentes.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-148",
+    "topic": "ferias y productos",
+    "question": "¿Tengo que aceptar publicidad para hacer una simulación?",
+    "answer": "No. La educación y los ejemplos no deben condicionarse a consentimiento comercial. Podés rechazar una solicitud de contacto y seguir explorando.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-149",
+    "topic": "ferias y productos",
+    "question": "¿Cómo comparo dos productos en una feria?",
+    "answer": "Pedí condiciones escritas y contrastá costos, acceso al dinero, riesgos y obligaciones. Tomate tiempo; una promoción no reemplaza revisar si el producto responde a tu necesidad.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-150",
+    "topic": "ferias y productos",
+    "question": "¿Qué significa que mi solicitud quedó enviada?",
+    "answer": "En este demo significa que el backend registró una solicitud sintética. No significa conexión con un banco real, aprobación de producto ni contacto humano ya realizado.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-151",
+    "topic": "accesibilidad",
+    "question": "¿Podés explicármelo más despacio?",
+    "answer": "Con mucho gusto. Podemos ir paso a paso, con frases cortas y una pregunta a la vez. Decime qué parte querés revisar; también podés pedir ayuda humana.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-152",
+    "topic": "accesibilidad",
+    "question": "¿Puedo usar la pantalla sin hablar?",
+    "answer": "Sí, la experiencia debe permitir recorridos táctiles. La voz es opcional y no necesitás explicar por qué preferís tocar la pantalla.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-153",
+    "topic": "accesibilidad",
+    "question": "¿Puedo hablar sin que se active mi cámara?",
+    "answer": "La conversación no requiere que compartás tu imagen. Revisá los permisos del dispositivo antes de iniciar; no prometo funciones de hardware que no estén disponibles.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-154",
+    "topic": "accesibilidad",
+    "question": "¿Puedo leer lo que dice Juliana?",
+    "answer": "Usá los textos y subtítulos cuando estén disponibles. Si el audio falla, podés continuar por pantalla o pedir una persona sin repetir secretos ni datos bancarios.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-155",
+    "topic": "accesibilidad",
+    "question": "¿Puedo pedir letras más grandes?",
+    "answer": "Usá la opción de accesibilidad de la experiencia o solicitá asistencia para el dispositivo. El contenido debe seguir siendo legible y los controles accesibles al ampliar.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-156",
+    "topic": "accesibilidad",
+    "question": "¿Juliana habla idiomas mayas?",
+    "answer": "No se afirma soporte que no esté implementado. La experiencia contempla español e inglés; si necesitás otro idioma, solicitá atención humana y confirmá disponibilidad de interpretación.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-157",
+    "topic": "accesibilidad",
+    "question": "¿Qué pasa si no entiendo una palabra financiera?",
+    "answer": "Pedime un ejemplo sencillo. Podemos explicar cuota, interés o remesa sin tecnicismos y comprobar si querés continuar; no hace falta que aceptés un producto.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-158",
+    "topic": "accesibilidad",
+    "question": "¿Puedo cambiar de tema a mitad de una conversación?",
+    "answer": "Sí. Podés decir que querés volver al menú o elegir otra necesidad. Una operación que requería confirmación no debe completarse solo por cambiar de tema.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-159",
+    "topic": "accesibilidad",
+    "question": "¿Puedo pedir que una persona me acompañe?",
+    "answer": "Sí, podés solicitar asistencia humana. Eso no obliga a revelar contraseñas ni a contratar; la llegada o conexión de una persona solo se confirma cuando el sistema lo verifica.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-160",
+    "topic": "accesibilidad",
+    "question": "¿Necesito terminar rápido si soy una persona mayor?",
+    "answer": "No tenés que aceptar algo por presión. Podés pedir tiempo, repetir la explicación o solicitar acompañamiento; si la sesión expira, se reinicia de forma segura.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-161",
+    "topic": "despliegue",
+    "question": "¿Qué hace Juliana en una caja comunitaria?",
+    "answer": "Prioriza orientación sobre remesas, pagos y atención del encargado. Los servicios disponibles dependen de la configuración; no recibe ni dispensa efectivo por mostrar una interfaz.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-162",
+    "topic": "despliegue",
+    "question": "¿Qué hace Juliana en un consulado móvil?",
+    "answer": "Prioriza orientación financiera para migrantes y enlaces oficiales de trámites. No representa al consulado, no verifica expedientes y no da asesoría migratoria personalizada.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-163",
+    "topic": "despliegue",
+    "question": "¿Qué hace Juliana en una feria comercial?",
+    "answer": "Prioriza descubrir ejemplos de productos, simulaciones y solicitudes de contacto consentidas. No puede prometer beneficios ni aprobación crediticia para cerrar una venta.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-164",
+    "topic": "despliegue",
+    "question": "¿Qué hace Juliana en un centro comercial?",
+    "answer": "Prioriza orientación de autoservicio, preguntas frecuentes y asistencia. Las ubicaciones y operaciones del demo son ficticias y no acreditan disponibilidad de un servicio real.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-165",
+    "topic": "despliegue",
+    "question": "¿Qué puedo consultar sin internet?",
+    "answer": "Solo contenido público previamente disponible y claramente marcado como no actualizado. Sin verificación no se deben consultar remesas, autenticar ni ejecutar operaciones; no se confirma éxito financiero sin conexión.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-166",
+    "topic": "despliegue",
+    "question": "¿Puedo seguir después de que expire mi sesión?",
+    "answer": "Volvé a iniciar un recorrido seguro. No se debe recuperar información privada desde un cache público ni conservar credenciales; cualquier operación pendiente requiere nueva verificación.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-167",
+    "topic": "despliegue",
+    "question": "¿Juliana puede ver datos de Alex?",
+    "answer": "No debe acceder a conversaciones, pacientes, herramientas ni configuraciones de Alex. Ambas experiencias requieren estado y permisos separados; la infraestructura compartida no autoriza mezclar información.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-168",
+    "topic": "despliegue",
+    "question": "¿Una solicitud de ayuda significa que ya llegó un asesor?",
+    "answer": "No. Hay que distinguir solicitud registrada, aceptada y resuelta. No se anuncia una conexión humana mientras el backend no confirme el estado correspondiente.",
+    "source": "https://github.com/ppaassaallee/RealisticAi",
+    "category": "deployment",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Demostración ficticia. No constituye oferta, aprobación, saldo ni operación real.",
+    "demo": true,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "DEMO",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-169",
+    "topic": "remesas",
+    "question": "¿El tipo de cambio de referencia es mi cotización de envío?",
+    "answer": "El Banco de Guatemala publica un tipo de cambio de referencia. No equivale necesariamente al tipo que aplicará tu proveedor; pedí el neto a recibir antes de confirmar.",
+    "source": "https://www.banguat.gob.gt/",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  },
+  {
+    "id": "DP-KB-170",
+    "topic": "ahorro",
+    "question": "¿Por qué debo revisar mi meta si suben los precios?",
+    "answer": "La inflación reduce lo que una misma cantidad puede comprar. Revisá periódicamente el costo de tu objetivo y ajustá aportes o plazo sin asumir que el rendimiento compensará los aumentos.",
+    "source": "https://www.banguat.gob.gt/",
+    "category": "education",
+    "validity": "Revisión editorial: 2026-11-13. Verificar la fuente oficial antes de cualquier trámite; no contiene tarifas vigentes.",
+    "conditions": "Educación general; no asesoría financiera o legal personalizada. No usar como condición contractual.",
+    "demo": false,
+    "escalation": "Derivar a un asesor autorizado cuando se requieran datos personales, condiciones vigentes o una operación real.",
+    "status": "EDUCATIONAL",
+    "modes": [
+      "community",
+      "consulate",
+      "fair",
+      "mall"
+    ]
+  }
+]

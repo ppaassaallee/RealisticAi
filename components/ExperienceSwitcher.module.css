@@ -1,0 +1,137 @@
+.switcher {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 80;
+  font-family: Inter, Arial, sans-serif;
+  color: #24332a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.trigger {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d3dbd4;
+  border-radius: 50%;
+  background: #ffffffed;
+  color: #617067;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 3px 16px #16231a0b;
+  opacity: 0.72;
+  transition: opacity 0.15s;
+}
+.trigger:hover,
+.trigger[aria-expanded="true"],
+.trigger:focus-visible {
+  opacity: 1;
+  color: #146b3a;
+}
+.switcher button:focus-visible,
+.switcher a:focus-visible {
+  outline: 3px solid #b58b3c;
+  outline-offset: 3px;
+}
+.panel {
+  position: absolute;
+  bottom: 56px;
+  right: 0;
+  width: 292px;
+  max-width: calc(100vw - 36px);
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #dce3dc;
+  border-radius: 15px;
+  box-shadow: 0 12px 50px #18251c20;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  color: #627064;
+}
+.heading button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 12px 8px;
+  border: 0;
+  border-radius: 9px;
+  background: #fff;
+  text-align: left;
+  color: #26372a;
+  cursor: pointer;
+  font: inherit;
+}
+.option:hover {
+  background: #f3f6f1;
+}
+.option:disabled {
+  cursor: default;
+}
+.option img {
+  width: 38px;
+  height: 43px;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 7px;
+}
+.option > span:nth-child(2) {
+  flex: 1;
+}
+.option strong {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+.option small {
+  display: block;
+  color: #728071;
+  font-size: 11px;
+}
+.current {
+  font-size: 10px;
+  color: #71806d;
+  background: #f0f4ed;
+  border-radius: 10px;
+  padding: 3px 7px;
+}
+.panel p {
+  font-size: 10px;
+  color: #6b7867;
+  margin: 12px 0;
+}
+.panel a {
+  font-size: 11px;
+  color: #396244;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  border-top: 1px solid #e6ebe3;
+  padding-top: 12px;
+  min-height: 38px;
+}
+.panel p.error {
+  color: #953d20;
+}
+@media (prefers-reduced-motion: reduce) {
+  .trigger {
+    transition: none;
+  }
+}

@@ -9,7 +9,8 @@
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "playwright test",
-    "setup:tavus": "node --env-file=.env.local --import tsx scripts/setup-tavus.ts"
+    "setup:tavus": "node --env-file=.env.local --import tsx scripts/setup-tavus.ts",
+    "setup:juliana": "node --env-file=.env.local --import tsx scripts/setup-juliana.ts"
   },
   "repository": {
     "type": "git",
