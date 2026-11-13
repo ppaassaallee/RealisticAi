@@ -1,11 +1,11 @@
-import { tavus } from "@/lib/tavus";
+import { tavus, TavusError, endConversation } from "@/lib/tavus";
 import { modes } from "./config";
 import type { BankSession } from "./store";
 export const bankVoiceConfigured = () =>
   Boolean(
     process.env.TAVUS_API_KEY &&
-      process.env.JULIANA_PAL_ID &&
-      process.env.JULIANA_FACE_ID,
+    process.env.JULIANA_PAL_ID &&
+    process.env.JULIANA_FACE_ID,
   );
 export async function startBankConversation(s: BankSession) {
   if (!bankVoiceConfigured())
@@ -40,4 +40,54 @@ export async function startBankConversation(s: BankSession) {
     url: c.conversation_url,
     token: c.meeting_token,
   };
+}
+
+export async function endBankConversation(id: string) {
+  try {
+    await endConversation(id);
+  } catch (error) {
+    if (!(error instanceof TavusError && [404, 410].includes(error.status)))
+      throw error;
+  }
+}
+export function bankVoiceError(error: unknown) {
+  if (error instanceof TavusError) {
+    const messages = {
+      quota:
+        "Se agotaron los minutos de Tavus. Revisá Billing en tu workspace. Podés seguir usando la pantalla.",
+      concurrency:
+        "Ya hay una llamada activa en este workspace. Cerrala antes de volver a conectar.",
+      rate_limit:
+        "Tavus está recibiendo demasiadas solicitudes. Esperá un momento y volvé a intentar.",
+      credentials:
+        "Tavus no autorizó la conexión. Revisá la clave y los permisos del workspace.",
+      unavailable:
+        "Tavus no está disponible en este momento. Podés continuar por pantalla y volver a conectar después.",
+      request:
+        "No se pudo iniciar la llamada. Podés continuar por pantalla o revisar la configuración de voz.",
+    };
+    return {
+      code: error.code,
+      message: messages[error.code],
+      status:
+        error.code === "quota"
+          ? 402
+          : error.code === "concurrency"
+            ? 409
+            : error.status === 429
+              ? 429
+              : 503,
+    };
+  }
+  if (
+    error instanceof Error &&
+    ["TimeoutError", "AbortError"].includes(error.name)
+  )
+    return {
+      code: "timeout",
+      message:
+        "La conexión tardó demasiado. Podés seguir por pantalla y volver a intentar.",
+      status: 504,
+    };
+  return null;
 }

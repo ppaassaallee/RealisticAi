@@ -1,3 +1,16 @@
+## November 13, 2026 — Juliana call stability
+
+- Typecheck and isolated production build passed. Build retains three existing filesystem-tracing warnings in Alex's local store.
+- Regression suite: 73 passed, 3 opt-in tests skipped (paid Alex/Juliana calls and role-server configuration).
+- Focused verification: 5 passed, including one real Juliana call (19.6 seconds) and four deterministic voice/error tests. Live media playback, remittance lookup, savings calculation, credit calculation, knowledge retrieval, human queue request, interruption and teardown succeeded after the account upgrade.
+- Spoken turn events now renew the inactivity timer. Tests advance past two minutes with ongoing speech, then verify silence and absolute expiry still end the session.
+- Stale call closures cannot terminate a newer call. Failed provider closures remain pending for retry; cancelled creation cannot attach to an ended session. Deterministic lifecycle tests use a mocked provider and temporary storage.
+- Quota failures show an actionable Spanish message and release call controls. Provider details and credentials are never returned in error messages. Missing tool fields are reported so Juliana can ask for corrections.
+- Existing Juliana PAL updated to medium interruptibility and medium turn-taking patience using Sparrow-2. Alex's prompt and layers compared unchanged. Setup accepts Tavus's no-change PATCH response for repeat runs.
+- Typed messages pause the microphone, with a visible re-enable hint, to prevent room audio interrupting text-driven answers.
+
+Live verification used typed turns and a browser test microphone. Physical microphone/room-speaker behavior still requires a check on the presentation device; this is not a measured latency benchmark. Local server remains available at http://127.0.0.1:3000/juliana. No hosted deployment.
+
 # Juliana portrait and conversation polish — November 13, 2026
 
 - Replaced the welcome portrait with a stylized 3D Juliana, using Alex as the style reference. Reviewed the rendered kiosk screenshot. Live face unchanged.

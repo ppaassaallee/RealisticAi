@@ -27,6 +27,8 @@ export type BankSession = {
   verified?: string;
   ended?: boolean;
   calls: number;
+  voiceEpoch?: number;
+  pendingEndId?: string;
   pending?: { id: string; journey: Journey; args: Record<string, unknown> };
   conversation?: { id: string; url: string; token?: string };
 };
@@ -85,7 +87,8 @@ export function writeBank<T>(fn: (db: BankStore) => T): T {
   const result = fn(db);
   db.events = db.events.slice(-10000);
   for (const [id, s] of Object.entries(db.sessions))
-    if (s.expires < Date.now() && !s.conversation) delete db.sessions[id];
+    if (s.expires < Date.now() && !s.conversation && !s.pendingEndId)
+      delete db.sessions[id];
   fs.mkdirSync(path.dirname(file()), { recursive: true });
   const tmp = file() + ".tmp";
   fs.writeFileSync(tmp, JSON.stringify(db), { mode: 0o600 });

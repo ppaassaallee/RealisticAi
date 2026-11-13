@@ -1,3 +1,38 @@
+export type TavusErrorCode =
+  | "quota"
+  | "concurrency"
+  | "rate_limit"
+  | "credentials"
+  | "unavailable"
+  | "request";
+export class TavusError extends Error {
+  constructor(
+    public status: number,
+    public code: TavusErrorCode,
+  ) {
+    super(
+      `Tavus request failed (${status}). Check credentials, quota, and PAL configuration.`,
+    );
+    this.name = "TavusError";
+  }
+}
+export function classifyTavusError(
+  status: number,
+  detail: string,
+): TavusErrorCode {
+  if (/concurren|simultaneous|active conversation/i.test(detail))
+    return "concurrency";
+  if (
+    status === 402 ||
+    /quota|insufficient.*(credit|balance)|minutes.*(exceed|exhaust)|usage.limit|credit.*exhaust/i.test(
+      detail,
+    )
+  )
+    return "quota";
+  if (status === 429) return "rate_limit";
+  if (status === 401 || status === 403) return "credentials";
+  return status >= 500 ? "unavailable" : "request";
+}
 export function configured() {
   return Boolean(
     process.env.TAVUS_API_KEY &&
@@ -15,10 +50,14 @@ export async function tavus(path: string, body?: unknown, method = "POST") {
     body: body === undefined ? undefined : JSON.stringify(body),
     signal: AbortSignal.timeout(20000),
   });
-  if (!response.ok)
-    throw new Error(
-      `Tavus request failed (${response.status}). Check credentials, quota, and PAL configuration.`,
+  if (!response.ok) {
+    // Use provider detail only to classify; never return/log its raw body.
+    const detail = (await response.text()).slice(0, 10000);
+    throw new TavusError(
+      response.status,
+      classifyTavusError(response.status, detail),
     );
+  }
   if (response.status === 204) return {};
   const text = await response.text();
   return text ? JSON.parse(text) : {};

@@ -1,7 +1,10 @@
 import { cookies } from "next/headers";
 import { z } from "zod";
 import { sameOrigin } from "@/lib/auth";
-import { endConversation } from "@/lib/tavus";
+import {
+  closeBankVoice,
+  drainBankVoice,
+} from "@/experiences/juliana/lifecycle";
 import { bankCookie, bankRole, roleForToken } from "@/experiences/juliana/auth";
 import {
   bankSession,
@@ -16,6 +19,8 @@ import { runBankTool } from "@/experiences/juliana/engine";
 import {
   bankVoiceConfigured,
   startBankConversation,
+  endBankConversation,
+  bankVoiceError,
 } from "@/experiences/juliana/provider";
 import { journeyIds } from "@/experiences/juliana/config";
 import knowledge from "@/experiences/juliana/knowledge.json";
@@ -141,18 +146,7 @@ export async function POST(req: Request) {
       );
     }
     if (action === "session") {
-      if (id) {
-        const old = readBank().sessions[id];
-        if (old?.conversation) await endConversation(old.conversation.id);
-        writeBank((db) => {
-          if (db.sessions[id!]) {
-            db.sessions[id!].ended = true;
-            delete db.sessions[id!].conversation;
-            delete db.sessions[id!].verified;
-            delete db.sessions[id!].pending;
-          }
-        });
-      }
+      if (id) await closeBankVoice(id, undefined, true);
       const s = newBankSession(
         z.enum(["es", "en"]).optional().parse(body.language),
       );
@@ -161,24 +155,11 @@ export async function POST(req: Request) {
     }
     if (!id) throw new Error("Empezá una sesión primero.");
     if (action === "end" || action === "avatar-end") {
-      const s = readBank().sessions[id];
-      if (s?.conversation) await endConversation(s.conversation.id);
-      writeBank((db) => {
-        const s = db.sessions[id!];
-        if (s) {
-          delete s.conversation;
-          if (action === "end") {
-            if (!s.ended)
-              event(db, s, "session_ended", {
-                duration: Date.now() - s.created,
-              });
-            s.ended = true;
-            delete s.verified;
-            delete s.pending;
-            delete s.result;
-          }
-        }
-      });
+      const expectedId =
+        action === "avatar-end"
+          ? z.string().max(100).optional().parse(body.conversationId)
+          : undefined;
+      await closeBankVoice(id, expectedId, action === "end");
       if (action === "end")
         jar.set(bankCookie, "", { ...cookieOptions, maxAge: 0 });
       return json({ ok: true });
@@ -238,15 +219,28 @@ export async function POST(req: Request) {
         flights.set(
           id,
           (async () => {
+            await drainBankVoice(sid);
             const s = bankSession(readBank(), sid);
             if (s.conversation) return s.conversation;
+            const epoch = s.voiceEpoch || 0;
             const c = await startBankConversation(s);
             try {
               writeBank((db) => {
-                bankSession(db, sid).conversation = c;
+                const active = bankSession(db, sid);
+                if ((active.voiceEpoch || 0) !== epoch)
+                  throw new Error(
+                    "La conexión fue cancelada. Podés volver a iniciar la llamada.",
+                  );
+                active.conversation = c;
               });
             } catch (e) {
-              await endConversation(c.id);
+              try {
+                await endBankConversation(c.id);
+              } catch {
+                writeBank((db) => {
+                  if (db.sessions[sid]) db.sessions[sid].pendingEndId = c.id;
+                });
+              }
               throw e;
             }
             return c;
@@ -268,11 +262,20 @@ export async function POST(req: Request) {
           if (s) event(db, s, "error");
         });
       } catch {}
+    const voiceError = bankVoiceError(error);
+    if (voiceError)
+      return json(
+        { error: voiceError.message, code: voiceError.code },
+        voiceError.status,
+      );
     return json(
       {
         error:
           error instanceof z.ZodError
-            ? "Revisá los campos. Usá solo los datos de prueba."
+            ? `Revisá los campos: ${error.issues
+                .map((i) => i.path.join(".") || "datos requeridos")
+                .slice(0, 5)
+                .join(", ")}. Usá solo datos de prueba.`
             : error instanceof Error
               ? error.message
               : "No se pudo completar la solicitud.",

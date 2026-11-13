@@ -1,6 +1,20 @@
 import fs from "node:fs";
-import { tavus } from "../lib/tavus";
+import { tavus as requestTavus, TavusError } from "../lib/tavus";
 import { journeyIds } from "../experiences/juliana/config";
+async function tavus(path: string, body?: unknown, method = "POST") {
+  try {
+    return await requestTavus(path, body, method);
+  } catch (error) {
+    // Tavus returns 304 when an idempotent PAL patch makes no changes.
+    if (
+      method === "PATCH" &&
+      error instanceof TavusError &&
+      error.status === 304
+    )
+      return {};
+    throw error;
+  }
+}
 if (!process.env.TAVUS_API_KEY)
   throw new Error("Configure TAVUS_API_KEY locally first.");
 function save(key: string, value: string) {
@@ -42,7 +56,7 @@ if (!process.env.JULIANA_PAL_ID) {
       conversational_flow: {
         turn_detection_model: "sparrow-2",
         turn_taking_patience: "medium",
-        pal_interruptibility: "high",
+        pal_interruptibility: "medium",
       },
       tts: { voice_settings: { speed: 1.0 } },
     },
@@ -54,6 +68,28 @@ if (!process.env.JULIANA_PAL_ID) {
     [{ op: "replace", path: "/system_prompt", value: prompt }],
     "PATCH",
   );
+// Apply tuning to existing PALs too, preserving any other vendor flow settings.
+const currentPal = await tavus(
+  `/pals/${process.env.JULIANA_PAL_ID}`,
+  undefined,
+  "GET",
+);
+await tavus(
+  `/pals/${process.env.JULIANA_PAL_ID}`,
+  [
+    {
+      op: "add",
+      path: "/layers/conversational_flow",
+      value: {
+        ...currentPal.layers?.conversational_flow,
+        turn_detection_model: "sparrow-2",
+        turn_taking_patience: "medium",
+        pal_interruptibility: "medium",
+      },
+    },
+  ],
+  "PATCH",
+);
 save("JULIANA_FACE_ID", face);
 const props: Record<string, unknown> = {
   journey: { type: "string", enum: journeyIds },

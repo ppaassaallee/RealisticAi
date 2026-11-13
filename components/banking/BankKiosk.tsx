@@ -21,6 +21,7 @@ import {
   ChevronRight,
   LifeBuoy,
 } from "lucide-react";
+import { sessionShouldExpire } from "@/experiences/juliana/voice";
 import BankAvatar from "./BankAvatar";
 import { bankAction } from "./client";
 import {
@@ -136,8 +137,11 @@ export default function BankKiosk() {
     const timer = setInterval(() => {
       if (
         sessionRef.current &&
-        (Date.now() - activity.current > 120000 ||
-          sessionRef.current.expires < Date.now())
+        sessionShouldExpire(
+          Date.now(),
+          activity.current,
+          sessionRef.current.expires,
+        )
       ) {
         setActive(false);
         void bankAction("end").catch(() => {});
@@ -819,6 +823,9 @@ export default function BankKiosk() {
               language={language}
               onStop={() => setActive(false)}
               onError={setError}
+              onActivity={() => {
+                activity.current = Date.now();
+              }}
             />
           </div>
           <div className="bank-avatar-foot">

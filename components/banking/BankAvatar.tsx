@@ -3,17 +3,20 @@ import { useEffect, useRef, useState } from "react";
 import type { DailyCall } from "@daily-co/daily-js";
 import { Mic, MicOff, PhoneOff, Volume2, Square } from "lucide-react";
 import { bankAction as action } from "./client";
+import { isConversationActivity } from "@/experiences/juliana/voice";
 let pendingShutdown: Promise<unknown> = Promise.resolve();
 export default function BankAvatar({
   active,
   language,
   onStop,
   onError,
+  onActivity,
 }: {
   active: boolean;
   language: "en" | "es";
   onStop: () => void;
   onError: (message: string) => void;
+  onActivity: () => void;
 }) {
   const video = useRef<HTMLVideoElement>(null),
     audio = useRef<HTMLAudioElement>(null),
@@ -26,11 +29,12 @@ export default function BankAvatar({
     [captionRole, setCaptionRole] = useState("juliana"),
     [hasVideo, setHasVideo] = useState(false),
     [typed, setTyped] = useState("");
-  const callbacks = useRef({ onStop, onError });
-  callbacks.current = { onStop, onError };
+  const callbacks = useRef({ onStop, onError, onActivity });
+  callbacks.current = { onStop, onError, onActivity };
   useEffect(() => {
     if (!active) return;
     let cancelled = false;
+    let createdId = "";
     let instance: DailyCall | null = null;
     const handled = new Map<string, Promise<unknown>>();
     let lastStatus = "";
@@ -82,9 +86,10 @@ export default function BankAvatar({
         setMuted(false);
         update("connecting");
         const c = await action("avatar");
+        createdId = c.id;
         conversation.current = c.id;
         if (cancelled) {
-          await action("avatar-end");
+          await action("avatar-end", { conversationId: c.id });
           return;
         }
         const Daily = (await import("@daily-co/daily-js")).default;
@@ -104,10 +109,14 @@ export default function BankAvatar({
             if (!cancelled) callbacks.current.onStop();
           })
           .on("error", () => {
+            if (cancelled) return;
             update("error");
             callbacks.current.onError(
-              "Avatar connection interrupted. End the session and reconnect.",
+              language === "es"
+                ? "Se interrumpió la conexión. Podés volver a conectar o continuar por pantalla."
+                : "Connection interrupted. Reconnect or continue on screen.",
             );
+            callbacks.current.onStop();
           });
         instance.on("active-speaker-change", (event) => {
           if (!event || !instance) return;
@@ -118,6 +127,8 @@ export default function BankAvatar({
           if (!event || cancelled) return;
           const data = event.data;
           const props = data?.properties || {};
+          if (data && isConversationActivity(data))
+            callbacks.current.onActivity();
           if (
             data?.event_type === "conversation.stopped_speaking" &&
             props.role === "user"
@@ -173,6 +184,7 @@ export default function BankAvatar({
               handled.set(toolId, action("tool", { name: props.name, args }));
             }
             const result = await handled.get(toolId);
+            if (cancelled) return;
             instance?.sendAppMessage(
               {
                 message_type: "conversation",
@@ -186,7 +198,8 @@ export default function BankAvatar({
               },
               "*",
             );
-          } catch {
+          } catch (error) {
+            if (cancelled) return;
             instance?.sendAppMessage(
               {
                 message_type: "conversation",
@@ -194,8 +207,14 @@ export default function BankAvatar({
                 conversation_id: c.id,
                 properties: {
                   tool_call_id: toolId,
-                  output:
-                    "The action failed. Do not claim success. Offer human assistance.",
+                  output: JSON.stringify({
+                    error:
+                      error instanceof Error
+                        ? error.message
+                        : "No se pudo completar la acción.",
+                    instruction:
+                      "Do not claim success. If fields are missing or invalid, ask one concise question to correct them and retry with a new tool call ID. Offer human assistance if the problem persists.",
+                  }),
                   status: "error",
                 },
               },
@@ -210,6 +229,7 @@ export default function BankAvatar({
           startAudioOff: false,
         });
       } catch (e) {
+        if (cancelled) return;
         update("error");
         callbacks.current.onError(
           e instanceof Error ? e.message : "Unable to connect",
@@ -223,9 +243,17 @@ export default function BankAvatar({
       void instance?.destroy();
       navigator.sendBeacon(
         "/api/juliana",
-        new Blob([JSON.stringify({ action: "avatar-end" })], {
-          type: "application/json",
-        }),
+        new Blob(
+          [
+            JSON.stringify({
+              action: "avatar-end",
+              conversationId: createdId || undefined,
+            }),
+          ],
+          {
+            type: "application/json",
+          },
+        ),
       );
     };
     window.addEventListener("pagehide", leave);
@@ -233,16 +261,19 @@ export default function BankAvatar({
       cancelled = true;
       window.removeEventListener("pagehide", leave);
       instance?.setLocalAudio(false);
-      void instance?.destroy();
+      const destroyed = instance?.destroy().catch(() => {});
       call.current = null;
       setHasVideo(false);
       setStatus("offline");
       setCaption("");
       setTyped("");
       responseStart.current = null;
-      pendingShutdown = started
-        .catch(() => {})
-        .then(() => action("avatar-end"))
+      pendingShutdown = Promise.allSettled([started, destroyed])
+        .then(() =>
+          createdId
+            ? action("avatar-end", { conversationId: createdId })
+            : undefined,
+        )
         .catch(() => {});
     };
   }, [active]);
@@ -377,21 +408,32 @@ export default function BankAvatar({
             </button>
           </div>
         )}
+        {active && muted && (
+          <div className="glass-pill">
+            {es
+              ? "Micrófono pausado · activalo para hablar"
+              : "Microphone paused · enable it to speak"}
+          </div>
+        )}
         {active && (
           <form
             className="avatar-chat"
             onSubmit={(e) => {
               e.preventDefault();
               if (!typed.trim() || !hasVideo) return;
+              callbacks.current.onActivity();
+              call.current?.setLocalAudio(false);
+              setMuted(true);
               responseStart.current = performance.now();
-              call.current?.sendAppMessage(
-                {
-                  message_type: "conversation",
-                  event_type: "conversation.interrupt",
-                  conversation_id: conversation.current,
-                },
-                "*",
-              );
+              if (status === "speaking")
+                call.current?.sendAppMessage(
+                  {
+                    message_type: "conversation",
+                    event_type: "conversation.interrupt",
+                    conversation_id: conversation.current,
+                  },
+                  "*",
+                );
               call.current?.sendAppMessage(
                 {
                   message_type: "conversation",
