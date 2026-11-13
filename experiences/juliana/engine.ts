@@ -184,8 +184,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
       return finish({
         title: "Revisá antes de confirmar",
         kind: "simulation",
-        message:
-          "Esto es una demostración. No se moverá dinero ni se contratará un producto.",
+        message: "Revisá el resumen y confirmá cuando estés listo.",
         details,
         pendingId: s.pending.id,
       });
@@ -222,7 +221,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
               : "Pago simulado confirmado",
             kind: "simulation",
             message:
-              "El backend registró la simulación. No se debitó dinero. Este comprobante no tiene validez bancaria.",
+              "Listo. Podés consultar el resumen y la referencia de esta simulación.",
             reference: receipt,
             details: [
               `Referencia de prueba: ${ref}`,
@@ -248,7 +247,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
           title: "Referencia demostrativa creada",
           kind: "request",
           message:
-            "Tu solicitud quedó en esta consola de demostración. No se abrió una cuenta, no se envió dinero y no se aprobó crédito. Un asesor demo puede acompañarte en este punto.",
+            "Tu referencia quedó registrada en el modo demo. Podés usarla para continuar con atención.",
           reference: ref,
         },
         !prior,
@@ -318,7 +317,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
           {
             title: status || "Estado de prueba",
             kind: "simulation",
-            message: `Remesa ficticia ${r.reference}: Q${r.amount}. No representa dinero disponible para cobro real.`,
+            message: `Envío de prueba ${r.reference}: Q${r.amount}.`,
             details: [
               r.status === "available"
                 ? "Siguiente paso de ejemplo: presentar identificación en un punto autorizado; confirmar requisitos con el proveedor."
@@ -338,7 +337,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
               title: "Cuenta de demostración",
               kind: "simulation",
               message: a
-                ? `${a.type}: saldo ficticio Q${a.balance}. No es una cuenta real.`
+                ? `${a.type}: saldo de ejemplo Q${a.balance}.`
                 : "Esta identidad no tiene cuenta de prueba.",
               details: [
                 "Depósitos y retiros requieren un punto autorizado y hardware certificado. Aquí solo ofrecemos orientación.",
@@ -393,8 +392,8 @@ export function runBankTool(id: string, name: string, input: unknown) {
         if (step === "prepare")
           return pending(
             [
-              "Interés en crédito de demostración",
-              "Solo se crea una referencia local para conversar con un asesor demo; no se comparte información personal ni se solicita un préstamo real.",
+              "Interés en orientación de crédito",
+              "Crearemos una referencia para conversar con un asesor en este entorno demo.",
             ],
             { product: "credit" },
           );
@@ -429,7 +428,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
           return pending(
             [
               "Interés en planificación de ahorro",
-              "Solo se crea una referencia local para asesoría demo. No se abre una cuenta ni se envían datos de contacto.",
+              "Crearemos una referencia para continuar tu plan de ahorro en este entorno demo.",
             ],
             { product: "saving" },
           );
@@ -470,7 +469,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
             kind: "information",
             message: `Para ${need} desde ${country} (${jurisdiction}), verificá la oficina competente en el directorio oficial. No tenemos requisitos, citas, tarifas ni horarios verificados en tiempo real.`,
             details: [
-              "Banco Interior es ficticio y no es autoridad consular. No proporcionamos asesoría migratoria legal personalizada.",
+              "Para requisitos o asesoría legal, consultá al consulado o a un profesional autorizado.",
               "Confirmá jurisdicción y documentación directamente antes de viajar o pagar. No necesitamos conocer tu estatus migratorio.",
               journey === "migrant"
                 ? "Para apoyar a tu familia: compará costos del envío, protegé la referencia y separá una parte del presupuesto para metas sostenibles."
@@ -493,7 +492,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
               details: [
                 "Si hay peligro físico inmediato, buscá ayuda de emergencia local.",
                 "No uses enlaces del mensaje sospechoso. Conservá evidencia fuera del kiosco; no subás datos sensibles aquí.",
-                "Podés crear un caso demo para el equipo de atención.",
+                "Podés solicitar acompañamiento del equipo de atención.",
               ],
             },
             true,
@@ -523,7 +522,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
             title: "Solicitud en espera",
             kind: "request",
             message:
-              "El caso se creó en la consola demo. Todavía no hay una persona conectada. El estado cambiará cuando un operador acepte la solicitud.",
+              "Tu solicitud quedó en espera. Te avisaremos aquí cuando un operador la acepte.",
             reference: c.id,
           },
           !existing,

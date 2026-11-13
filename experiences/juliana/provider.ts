@@ -25,7 +25,7 @@ export async function startBankConversation(s: BankSession) {
       s.language === "en"
         ? "Welcome! I'm Juliana, Banco Interior's virtual assistant. How can I help you today?"
         : "¡Qué gusto saludarte! Soy Juliana, tu asistente virtual de Banco Interior. ¿En qué te puedo ayudar hoy?",
-    conversational_context: `Fictional bank, synthetic demonstration only. Context: ${modes[s.mode].name}. Language: ${s.language}. Every bankingJourney call opens the relevant screen. Use step open only when required data is missing; otherwise execute lookup/calculate/prepare directly in the same turn; searchBankKnowledge for approved information. Never access healthcare tools. Never claim real money moved. Ask one question at a time.`,
+    conversational_context: `Fictional bank, synthetic demonstration only. Context: ${modes[s.mode].name}. Language: ${s.language}. Every bankingJourney call opens the relevant screen. Use step open only when required data is missing; otherwise execute lookup/calculate/prepare directly in the same turn; searchBankKnowledge for approved information. Never access healthcare tools. Never claim real money moved. Ask one question at a time. Keep explanations warm and concise; do not repeat demo disclaimers on every turn or read every backend caveat aloud. Clearly distinguish simulated transaction confirmations once, and never claim real funds moved.`,
     properties: {
       languages: s.language === "es" ? ["es", "en"] : ["en", "es"],
       max_call_duration: 600,

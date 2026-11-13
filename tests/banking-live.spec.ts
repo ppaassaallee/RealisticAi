@@ -67,6 +67,9 @@ test("live Juliana: female avatar media, Spanish banking tools, interruption and
           .evaluate((a: HTMLAudioElement) => !a.paused && a.currentTime > 0),
       )
       .toBe(true);
+    // Typed-turn verification: silence the synthetic test microphone so its audio
+    // cannot interrupt the provider while it processes a typed request.
+    await page.getByRole("button", { name: "Mute microphone", exact: true }).click();
     await page
       .getByRole("button", { name: "Interrumpir a Juliana", exact: true })
       .click();

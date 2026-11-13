@@ -80,7 +80,7 @@ export const journeys = {
     title: "Necesito ayuda",
     short: "Hablar con una persona",
     category: "Atención",
-    description: "Solicitá acompañamiento de nuestro equipo demo.",
+    description: "Solicitá acompañamiento de nuestro equipo.",
   },
 } as const;
 export type Journey = keyof typeof journeys;
@@ -98,8 +98,7 @@ export const defaultConfig: BankConfig = {
   mode: "community",
   language: "es",
   accent: "forest",
-  notice:
-    "Banco Interior es una marca ficticia. Usá únicamente datos de prueba.",
+  notice: "Experiencia demo · Usá datos de prueba.",
   enabled: [...journeyIds],
   disabledKnowledge: [],
   integration: "demo",

@@ -534,8 +534,7 @@ export default function BankKiosk() {
                   {journey === "collect" && (
                     <>
                       <p className="bank-form-note">
-                        Usá solo identidad y referencia ficticias. Ejemplo:
-                        DEMO-01 / PRUEBA-01 / REM-001.
+                        Datos para probar: DEMO-01 / PRUEBA-01 / REM-001.
                       </p>
                       {field("userId", "Identidad de prueba")}
                       {field("demoCode", "Código de prueba (no es tu PIN)")}
@@ -551,8 +550,7 @@ export default function BankKiosk() {
                         products.map((p) => ({ value: p.id, label: p.name })),
                       )}
                       <p className="bank-form-note">
-                        Catálogo ficticio. Condiciones oficiales pendientes de
-                        aprobación.
+                        Explorá las opciones del catálogo demo.
                       </p>
                     </>
                   )}
@@ -637,8 +635,8 @@ export default function BankKiosk() {
                         { value: "fraud", label: "Orientación sobre fraude" },
                       ])}
                       <p>
-                        La solicitud se envía únicamente a la consola demo. No
-                        hay conexión con un banco real.
+                        Elegí el equipo que mejor pueda ayudarte. Verás aquí el
+                        estado de tu solicitud.
                       </p>
                     </>
                   )}
@@ -662,10 +660,10 @@ export default function BankKiosk() {
                 <section className="bank-result" aria-live="polite">
                   <span className="bank-result-label">
                     {result.kind === "simulation"
-                      ? "SIMULACIÓN · SIN MOVIMIENTO DE DINERO"
+                      ? "SIMULACIÓN"
                       : result.kind === "request"
-                        ? "SOLICITUD DEMOSTRATIVA"
-                        : "ORIENTACIÓN INFORMATIVA"}
+                        ? "SOLICITUD · DEMO"
+                        : "ORIENTACIÓN"}
                   </span>
                   <h2>{result.title}</h2>
                   <p>{result.message}</p>
@@ -699,8 +697,8 @@ export default function BankKiosk() {
                           onChange={(e) => setConsent(e.target.checked)}
                         />
                         {["account", "loan", "save"].includes(journey)
-                          ? "Revisé los datos y autorizo crear una solicitud demo. No se abrirá una cuenta ni se guardarán mis datos personales."
-                          : "Revisé los datos y quiero confirmar esta simulación. Entiendo que no se mueve dinero."}
+                          ? "Autorizo crear esta solicitud en modo demo."
+                          : "Confirmo esta simulación, sin movimiento de dinero."}
                       </label>
                       <button
                         className="bank-primary"
@@ -729,7 +727,7 @@ export default function BankKiosk() {
                   disabled={!online || busy}
                   onClick={() => run("request")}
                 >
-                  Crear caso demo de atención
+                  Solicitar atención
                   <Headphones size={18} />
                 </button>
               )}
@@ -741,7 +739,7 @@ export default function BankKiosk() {
                     disabled={busy || !online}
                     onClick={() => run("prepare")}
                   >
-                    Me interesa · solicitar orientación demo
+                    Me interesa · solicitar orientación
                   </button>
                 )}
               {["loan", "save", "account"].includes(journey) && (

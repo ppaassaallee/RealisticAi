@@ -1,3 +1,10 @@
+# Juliana portrait and conversation polish — November 13, 2026
+
+- Replaced the welcome portrait with a stylized 3D Juliana, using Alex as the style reference. Reviewed the rendered kiosk screenshot. Live face unchanged.
+- Reduced repeated demo caveats in screen text, backend summaries and the independently configured Juliana PAL; preserved demo labels, consent, simulated transaction confirmation and actual backend results. Alex provider configuration remained unchanged.
+- Production build and typecheck passed. Nine banking workflow/security/UI tests passed.
+- Live banking test passed (18.2 seconds): remittance lookup, savings, credit, KB retrieval, handoff, media and teardown. The initial live run did not receive the lookup action; the repeat muted the synthetic test microphone during typed turns and passed.
+
 # Juliana expansion — November 13, 2026
 
 - Final production build in the isolated QA checkout: passed. All Alex routes and new platform/Juliana routes generated. Three pre-existing dynamic filesystem tracing warnings remain in Alex's unchanged store.
