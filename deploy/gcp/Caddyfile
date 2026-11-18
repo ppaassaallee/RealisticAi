@@ -1,0 +1,12 @@
+{$DEMO_HOST} {
+  basic_auth {
+    {$DEMO_USER} {$DEMO_PASSWORD_HASH}
+  }
+  header {
+    X-Robots-Tag "noindex, nofollow"
+    X-Content-Type-Options "nosniff"
+  }
+  reverse_proxy app:3000 {
+    flush_interval -1
+  }
+}

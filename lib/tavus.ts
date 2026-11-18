@@ -1,3 +1,4 @@
+import { reserveCall, bindCall, releaseCall } from "./call-cap";
 import { MAX_CALL_SECONDS } from "@/lib/voice-budget";
 export type TavusErrorCode =
   | "quota"
@@ -42,6 +43,9 @@ export function configured() {
   );
 }
 export async function tavus(path: string, body?: unknown, method = "POST") {
+  const lease =
+    path === "/conversations" && method === "POST" ? reserveCall() : undefined;
+  // Keep an uncertain reservation until expiry if fetch times out: creation may have succeeded.
   const response = await fetch(`https://tavusapi.com/v2${path}`, {
     method,
     headers: {
@@ -52,6 +56,7 @@ export async function tavus(path: string, body?: unknown, method = "POST") {
     signal: AbortSignal.timeout(20000),
   });
   if (!response.ok) {
+    if (lease && response.status < 500) releaseCall(lease);
     // Use provider detail only to classify; never return/log its raw body.
     const detail = (await response.text()).slice(0, 10000);
     throw new TavusError(
@@ -61,7 +66,9 @@ export async function tavus(path: string, body?: unknown, method = "POST") {
   }
   if (response.status === 204) return {};
   const text = await response.text();
-  return text ? JSON.parse(text) : {};
+  const result = text ? JSON.parse(text) : {};
+  if (lease) bindCall(lease, result.conversation_id);
+  return result;
 }
 export async function startConversation(language: "en" | "es") {
   if (!configured())
@@ -89,5 +96,12 @@ export async function startConversation(language: "en" | "es") {
   });
 }
 export async function endConversation(id: string) {
-  await tavus(`/conversations/${encodeURIComponent(id)}/end`);
+  try {
+    await tavus(`/conversations/${encodeURIComponent(id)}/end`);
+  } catch (error) {
+    if (error instanceof TavusError && [404, 410].includes(error.status))
+      releaseCall(undefined, id);
+    throw error;
+  }
+  releaseCall(undefined, id);
 }

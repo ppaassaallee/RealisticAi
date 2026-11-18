@@ -20,7 +20,7 @@ npm run dev
 
 Open http://127.0.0.1:3000/kiosk, `/staff`, `/demo`, and `/analytics`. For a production build: `npm run build && npm start`. The default binding is local-only. Do not put this demonstration on the public internet without authentication for kiosk access and vendor usage limits.
 
-Tavus setup creates Alex's PAL, registers exactly three tools, and saves the PAL/replica IDs locally. Alex uses Tavus’s managed `tavus-gpt-sol` model for reliable workflow tool calling. The default live face is Tavus's stock **Daniel – Office** (`rf4703150052`). Set `TAVUS_REPLICA_ID` before setup to use another commercially available stock face. The supplied illustrated portrait is an explicitly labeled welcome preview; it is not the live avatar. No recording or camera activation is requested. Calls are limited to ten minutes, with short absent/left-participant timeouts.
+Tavus setup creates Alex's PAL, registers exactly three tools, and saves the PAL/replica IDs locally. Alex uses Tavus’s managed `tavus-gpt-sol` model for reliable workflow tool calling. The default live face is Tavus's stock **Daniel – Office** (`rf4703150052`). Set `TAVUS_REPLICA_ID` before setup to use another commercially available stock face. The supplied illustrated portrait is an explicitly labeled welcome preview; it is not the live avatar. No recording or camera activation is requested. Calls are limited to five minutes, with short absent/left-participant timeouts.
 
 The current Tavus APIs call personas **PALs** and replicas **Faces**. This app uses `/v2/pals`, the tool registry, Daily's SDK, and `conversation.tool_result` with the original `tool_call_id`. All tool actions execute on this app's server. No additional LLM, speech, or image services are required.
 
@@ -88,3 +88,7 @@ The browser ends voice after 90 seconds without conversation activity or typed i
 Chrome's Web Locks prevent overlapping demo calls across tabs of the same origin, including Alex versus Juliana. This is not an account-wide limit across different browsers or devices. Switching to a meeting tab does not itself end voice, so Teams/Meet demos remain usable. Closing/reloading sends best-effort provider cleanup and releases local media; the provider cap protects against a lost close request. Refresh existing demo tabs to load the safeguards; already-created calls keep their original provider configuration.
 
 Idle Juliana state polling slows to 30 seconds and pauses while hidden, retaining four-second updates during a visible live call or unresolved handoff. Alex's server event polling runs every two seconds. No recordings or paid background test calls are enabled by this change.
+
+## GCP deployment
+
+See [the GCP deployment guide](deploy/gcp/README.md) for a dedicated VM, persistent storage, password-protected HTTPS, deployment scripts and a server-side Tavus concurrency limit.

@@ -1,3 +1,12 @@
+## November 18, 2026 — GCP deployment preparation
+
+- Typecheck and isolated Next production build passed; existing dynamic-filesystem tracing warnings remain.
+- Full regression suite: **82 passed, 3 opt-in checks skipped**. No paid Tavus call was created.
+- New persistent shared call-cap test covers both call admission and release behavior, unrelated close IDs, uncertain network failures, and expiry. Deployment enables one call across both experiences; local development remains unchanged unless TAVUS_CALL_LIMIT is set.
+- Deployment scripts pass Bash syntax validation; secret-file generator passes Node syntax validation and a fake-credential run, including mode-600 permissions. No real credentials were generated or uploaded during this validation.
+- Docker/Compose files and dedicated GCP provisioning/publication scripts prepared. Docker is not installed locally, so container build, HTTPS proxy, cloud IAM, disk persistence after restart and public endpoint validation remain pending on the VM.
+- Existing GCP CLI account found, but Google token refresh requires interactive reauthentication. No GCP project, billing link, VM, firewall, static IP or public endpoint has been created yet.
+
 ## November 13, 2026 — consumption safeguards for both avatars
 
 Typecheck and isolated production build passed (three pre-existing filesystem tracing warnings). Full regression suite: **81 passed, 3 opt-in checks skipped**. No paid Tavus calls were created during this review.

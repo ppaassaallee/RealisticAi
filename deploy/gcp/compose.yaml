@@ -1,0 +1,51 @@
+services:
+  app:
+    image: ${APP_IMAGE:-ai-kiosk:local}
+    build:
+      context: ../..
+    restart: unless-stopped
+    init: true
+    env_file:
+      - /opt/ai-kiosk/runtime.env
+    environment:
+      DEMO_DATA_FILE: /app/data/demo.json
+      BANK_DATA_FILE: /app/data/juliana/store.json
+      TAVUS_CALL_LIMIT: "1"
+      TAVUS_USAGE_FILE: /app/data/tavus-usage.json
+    volumes:
+      - /opt/ai-kiosk/data:/app/data
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/platform').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DEMO_HOST: ${DEMO_HOST:?Set DEMO_HOST}
+      DEMO_USER: ${DEMO_USER:?Set DEMO_USER}
+      DEMO_PASSWORD_HASH: ${DEMO_PASSWORD_HASH:?Set DEMO_PASSWORD_HASH}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - /opt/ai-kiosk/caddy-data:/data
+      - /opt/ai-kiosk/caddy-config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
