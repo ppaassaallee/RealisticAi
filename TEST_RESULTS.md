@@ -1,3 +1,17 @@
+## November 18, 2026 — GCP deployment verified
+
+Deployed application release `66f533ad725a` to project `ai-kiosk-demo-20261118`, VM `ai-kiosk-demo`, zone `us-central1-a`. Billing uses the user-selected account ending C314BE; the first selected account could not link because of its project billing quota. The application is live at https://ai-kiosk.136.115.147.162.sslip.io/platform behind visitor authentication.
+
+- Real Linux Docker build passed on GCP; app health check and Caddy startup passed. Next.js runs as the non-root node user.
+- Public HTTPS certificate issued successfully by Let's Encrypt. Unauthenticated API request returned 401; HTTP redirected to HTTPS.
+- Authenticated Chromium checks loaded `/platform`, `/kiosk` and `/juliana`, exercised all device frame selectors and reported no browser JavaScript errors. Voice is configured; zero paid avatar calls were started.
+- Banking session creation/end worked over HTTPS; the session cookie is Secure. Separate bank-admin and Alex-staff login/API checks passed; visitor credentials alone cannot access bank administration.
+- Read-only provider checks from the deployed container returned HTTP 200 for both configured Tavus PALs. No paid live-media acceptance call was made in this deployment pass.
+- The persisted banking store checksum was unchanged across an app-container restart; subsequent authenticated API checks passed.
+- Only proxy HTTP/HTTPS ports are exposed externally. SSH ingress is limited to IAP. Tavus key and role tokens are not in Git or the image; runtime secrets are private files on the VM. Visitor login details are stored locally in ignored `.cloud/demo-login.txt`; administrator tokens remain separate in `.cloud/access.txt`.
+
+Hosting is a running Compute Engine VM with a retained persistent boot disk and static IP. No scheduled backups, custom branded domain or account-wide daily Tavus spending cap were added. Cloud concurrency is limited to one call across this deployment, with existing duration/inactivity safeguards. The generated sslip.io demo hostname depends on third-party DNS.
+
 ## November 18, 2026 — GCP deployment preparation
 
 - Typecheck and isolated Next production build passed; existing dynamic-filesystem tracing warnings remain.
