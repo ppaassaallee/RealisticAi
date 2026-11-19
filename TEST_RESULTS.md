@@ -1,4 +1,6 @@
-## November 19, 2026 — OneSource branding and bilingual home
+## November 19, 2026 — OneSource branding and bilingual home, deployed
+
+Release `dc11a3d43890` is live. Live HTTPS checks verified English default, Spanish switching and persistence, OneSource branding, navigation between both assistants and mobile layout. No browser errors or paid calls.
 
 Production build and typecheck passed. Full Playwright regression: 84 passed, 3 opt-in checks skipped. Home defaults to English; switching to Spanish updates home and navigation and persists after reload. Desktop/mobile layouts reviewed; no horizontal overflow at 390px. Navigation, session cleanup, voice budgets and quota error recovery remain covered.
 
