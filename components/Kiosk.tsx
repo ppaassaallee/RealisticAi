@@ -575,9 +575,6 @@ export default function Kiosk() {
               {es ? "Terminar sesión" : "End session"}
             </button>
           )}
-          <a href="/staff">{es ? "Recepción" : "Staff"}</a>
-          <a href="/demo">Demo</a>
-          <a href="/analytics">{es ? "Analítica" : "Analytics"}</a>
         </div>
       </footer>
     </main>

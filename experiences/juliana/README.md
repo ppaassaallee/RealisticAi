@@ -1,6 +1,6 @@
 # Juliana · Banco Interior
 
-An independent fictional banking experience added alongside Alex. Start at `/platform` (administrative selector), `/juliana` (public kiosk), `/juliana/admin` (operations/configuration), or `/juliana/analytics` (actual application events). A discreet lower-right layers button on both kiosk screens opens the experience switcher (also Alt+Shift+E). It is shown only to users allowed into the administrative selector; switching first ends the outgoing session.
+An independent fictional banking experience added alongside Alex. Start at `/platform` (demo home), `/juliana` (banking demo), `/juliana/admin` (operations/configuration), or `/juliana/analytics` (actual application events). The visible top navigation offers Inicio, Alex and Juliana to every demo visitor. Switching from an experience ends its outgoing session before navigating. Staff/admin tools are grouped under Equipo and retain their separate access credentials.
 
 Alex remains at `/kiosk`, `/staff`, `/demo`, `/analytics` with its original files, cookies, data and PAL.
 

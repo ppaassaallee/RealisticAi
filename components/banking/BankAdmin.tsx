@@ -115,7 +115,11 @@ export default function BankAdmin({
           }}
         >
           <h1>Tu espacio de operación.</h1>
-          <p>Ingresá tu credencial administrativa de Banco Interior.</p>
+          <p>
+            Este espacio es para el equipo. Para presentar la demo no necesitás
+            una credencial administrativa.
+          </p>
+          <a href="/juliana">← Volver a la demo de Juliana</a>
           <input
             type="password"
             value={token}

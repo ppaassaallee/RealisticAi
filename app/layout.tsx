@@ -1,3 +1,4 @@
+import ExperienceNavigation from "@/components/ExperienceNavigation";
 import type { Metadata } from "next";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ExperienceNavigation />
+        {children}
+      </body>
     </html>
   );
 }

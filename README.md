@@ -1,6 +1,6 @@
 # Smart AI Kiosk — Alex + Juliana
 
-Two independent experiences share the existing Next.js / TypeScript / Tailwind stack. Open `/platform` for the administrative selector or `/juliana` for Banco Interior’s new fictional banking experience. [Juliana setup, journeys and limits](experiences/juliana/README.md). Alex’s existing screens and provider configuration are preserved.
+Two independent experiences share the existing Next.js / TypeScript / Tailwind stack. Open `/platform` for the demo home page or `/juliana` for Banco Interior’s new fictional banking experience. [Juliana setup, journeys and limits](experiences/juliana/README.md). Alex’s existing screens and provider configuration are preserved.
 
 Original healthcare experience: a Tavus conversational avatar, bilingual patient check-in, and live receptionist handoff. **Synthetic data only.**
 

@@ -952,7 +952,6 @@ export default function BankKiosk() {
         <div className="bank-footer-meta">
           <span>Cerca de vos, estés donde estés.</span>
           <button onClick={() => setDemo((v) => !v)}>Datos de prueba</button>
-          <a href="/juliana/admin">Administración ↗</a>
         </div>
         {demo && (
           <section className="bank-demo-panel">

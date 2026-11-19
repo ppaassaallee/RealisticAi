@@ -154,7 +154,13 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
         <section className="panel login-panel">
           <ShieldCheck />
           <h2>Staff access</h2>
-          <p>Enter the staff access token configured on this server.</p>
+          <p>
+            This area is for clinic staff. To present the demo, choose Alex or
+            Juliana in the navigation above.
+          </p>
+          <a className="secondary" href="/kiosk">
+            ← Back to Alex demo
+          </a>
           <form
             onSubmit={(e) => {
               e.preventDefault();

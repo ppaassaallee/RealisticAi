@@ -433,7 +433,7 @@ test("admin analytics, KB switches and CSV work without leaking patient state", 
   );
   await page.getByRole("button", { name: "Conocimiento", exact: true }).click();
   await page.getByLabel("Buscar catálogo de Juliana").fill("remesa");
-  await page.locator("details summary").first().click();
+  await page.locator(".bank-admin details summary").first().click();
   await expect(page.getByText("Disponible en consultas").first()).toBeVisible();
 });
 test("session expiry and explicit end reject subsequent banking actions", async ({
@@ -470,7 +470,7 @@ test("session expiry and explicit end reject subsequent banking actions", async 
     ).status(),
   ).toBe(400);
 });
-test("discreet switcher moves both ways and ends the outgoing session", async ({
+test("visible navigation switches both ways and ends the outgoing session", async ({
   page,
 }) => {
   await page.goto("/juliana");
@@ -478,13 +478,8 @@ test("discreet switcher moves both ways and ends the outgoing session", async ({
     .getByRole("button", { name: "Enviar o cobrar remesas", exact: true })
     .click();
   await page
-    .getByRole("button", { name: "Cambiar experiencia", exact: true })
-    .click();
-  await expect(
-    page.getByRole("dialog", { name: "Elegir experiencia" }),
-  ).toBeVisible();
-  await page
-    .getByRole("button", { name: "Cambiar a Alex", exact: true })
+    .getByRole("navigation", { name: "Navegación de demos" })
+    .getByRole("link", { name: "Alex · Salud", exact: true })
     .click();
   await expect(page).toHaveURL(/\/kiosk$/);
   expect(
@@ -494,10 +489,8 @@ test("discreet switcher moves both ways and ends the outgoing session", async ({
     data: { action: "session", language: "en" },
   });
   await page
-    .getByRole("button", { name: "Cambiar experiencia", exact: true })
-    .click();
-  await page
-    .getByRole("button", { name: "Cambiar a Juliana", exact: true })
+    .getByRole("navigation", { name: "Navegación de demos" })
+    .getByRole("link", { name: "Juliana · Banca", exact: true })
     .click();
   await expect(page).toHaveURL(/\/juliana$/);
   expect(
@@ -511,12 +504,15 @@ test("discreet switcher moves both ways and ends the outgoing session", async ({
       })
     ).status(),
   ).toBe(400);
-  await page.keyboard.press("Alt+Shift+KeyE");
+  await page
+    .getByRole("navigation", { name: "Navegación de demos" })
+    .getByRole("link", { name: "Inicio", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/platform$/);
   await expect(
-    page.getByRole("dialog", { name: "Elegir experiencia" }),
+    page.getByRole("link", { name: "Abrir demo de Alex", exact: true }),
   ).toBeVisible();
-  await page.keyboard.press("Escape");
   await expect(
-    page.getByRole("dialog", { name: "Elegir experiencia" }),
-  ).toBeHidden();
+    page.getByRole("link", { name: "Abrir demo de Juliana", exact: true }),
+  ).toBeVisible();
 });
