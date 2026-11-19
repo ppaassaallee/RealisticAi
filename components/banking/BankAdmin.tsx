@@ -77,7 +77,7 @@ export default function BankAdmin({
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = "banco-interior-demo-analytics.csv";
+    a.download = "onesource-juliana-analytics.csv";
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -85,14 +85,7 @@ export default function BankAdmin({
     <main className="bank bank-admin" lang="es">
       <header className="bank-admin-top">
         <a href="/platform" className="bank-brand">
-          <span className="bank-symbol">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>
-            SMART AI<span>KIOSK</span>
-          </span>
+          <img src="/onesource-logo.svg" alt="OneSource" width={156} height={44} style={{ objectFit: "contain" }} />
         </a>
         <span>Espacio administrativo</span>
         <nav>
@@ -158,7 +151,7 @@ export default function BankAdmin({
             <article className="bank-platform-card">
               <img src="/juliana-preview.png" alt="Juliana" />
               <div>
-                <span className="bank-eyebrow">BANCO INTERIOR</span>
+                <span className="bank-eyebrow">ONESOURCE</span>
                 <h2>Juliana</h2>
                 <p>
                   Cerca de vos, estés donde estés. Educación e inclusión
@@ -182,7 +175,7 @@ export default function BankAdmin({
         </>
       ) : (
         <>
-          <div className="bank-eyebrow">BANCO INTERIOR · JULIANA</div>
+          <div className="bank-eyebrow">ONESOURCE · JULIANA</div>
           <h1>
             {tab === "analytics"
               ? "Cada encuentro cuenta."

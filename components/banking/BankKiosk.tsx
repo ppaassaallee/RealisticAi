@@ -338,16 +338,9 @@ export default function BankKiosk() {
         <a
           href="/juliana"
           className="bank-brand"
-          aria-label="Banco Interior inicio"
+          aria-label="OneSource inicio"
         >
-          <span className="bank-symbol">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>
-            BANCO<span>INTERIOR</span>
-          </span>
+          <img src="/onesource-logo.svg" alt="OneSource" width={156} height={44} style={{ objectFit: "contain" }} />
         </a>
         <span className="bank-context">
           <span className="bank-dot" />

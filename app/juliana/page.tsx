@@ -1,6 +1,6 @@
 import BankKiosk from "@/components/banking/BankKiosk";
 export const metadata = {
-  title: "Juliana | Banco Interior",
+  title: "Juliana | OneSource",
   description:
     "Cerca de vos, estés donde estés. Experiencia bancaria demostrativa.",
 };

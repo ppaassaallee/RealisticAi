@@ -1,3 +1,9 @@
+## November 19, 2026 — OneSource branding and bilingual home
+
+Production build and typecheck passed. Full Playwright regression: 84 passed, 3 opt-in checks skipped. Home defaults to English; switching to Spanish updates home and navigation and persists after reload. Desktop/mobile layouts reviewed; no horizontal overflow at 390px. Navigation, session cleanup, voice budgets and quota error recovery remain covered.
+
+Customer-facing branding now uses OneSource, including Juliana logo, greetings, knowledge, page title and CSV export. Provider names removed from UI configuration and failure messages. Existing remote Alex/Juliana PAL names and prompts verified as OneSource, with voice layers unchanged. No paid conversations started. A first regression run caught an outdated quota-message assertion; it was updated and the full rerun passed.
+
 ## November 18, 2026 — intuitive visitor navigation, deployed
 
 Application release `131fb9c73850` is live on the existing GCP demo URL. `/platform` is now a visitor home with two direct demo cards, rather than a bank-admin component. A visible shared top bar offers Inicio, Alex and Juliana on all screens. Equipo groups protected staff/admin tools, and staff login screens explain how to return to a demo. Outgoing kiosk sessions are ended before navigation; errors keep the visitor on the current screen with a retry message.

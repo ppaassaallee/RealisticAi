@@ -13,7 +13,7 @@ export class TavusError extends Error {
     public code: TavusErrorCode,
   ) {
     super(
-      `Tavus request failed (${status}). Check credentials, quota, and PAL configuration.`,
+      `Live conversation unavailable (${status}). Contact your OneSource administrator or continue on screen.`,
     );
     this.name = "TavusError";
   }

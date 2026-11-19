@@ -39,7 +39,7 @@ test("provider failures have actionable safe messages", () => {
   expect(classifyTavusError(401, "unauthorized")).toBe("credentials");
   expect(classifyTavusError(503, "provider secret detail")).toBe("unavailable");
   expect(bankVoiceError(new TavusError(402, "quota"))?.message).toContain(
-    "minutos",
+    "límite de conversación",
   );
 });
 
@@ -98,7 +98,7 @@ test("quota failure releases call controls and leaves touchscreen usable", async
         body: JSON.stringify({
           code: "quota",
           error:
-            "Se agotaron los minutos de Tavus. Revisá Billing en tu workspace. Podés seguir usando la pantalla.",
+            "Se alcanzó el límite de conversación en vivo. Contactá al administrador de OneSource. Podés seguir usando la pantalla.",
         }),
       });
     } else await route.continue();
@@ -108,7 +108,7 @@ test("quota failure releases call controls and leaves touchscreen usable", async
     .getByRole("button", { name: "Conversar con Juliana", exact: true })
     .click();
   await expect(
-    page.getByText("Se agotaron los minutos de Tavus.", { exact: false }),
+    page.getByText("Se alcanzó el límite de conversación en vivo.", { exact: false }),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Conversar con Juliana", exact: true }),

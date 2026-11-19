@@ -16,6 +16,12 @@ test("demo home and switching need no administrator credentials or paid calls", 
     r.fulfill({ json: { allowed: false } }),
   );
   await page.goto("/platform");
+  await expect(page.getByRole("heading", { name: /Two assistants/ })).toBeVisible();
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.getByRole("button", { name: "Switch to Spanish" }).click();
+  await expect(page.getByRole("heading", { name: /Dos asistentes/ })).toBeVisible();
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("lang", "es");
   await expect(
     page.getByRole("heading", { name: /Dos asistentes/ }),
   ).toBeVisible();
@@ -49,6 +55,7 @@ test("failed session close keeps the current experience and offers retry", async
   page,
 }) => {
   await page.goto("/juliana");
+  await page.getByRole("button", { name: "Switch to Spanish" }).click();
   await page.route("**/api/juliana", async (route) => {
     if (
       route.request().method() === "POST" &&

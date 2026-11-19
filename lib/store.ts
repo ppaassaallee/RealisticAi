@@ -305,7 +305,7 @@ function executeToolCore(id: string, name: string, args: unknown) {
         summary: `Concierge handoff: ${input.reason}. ${context}`,
         status: "waiting",
         createdAt: new Date().toISOString(),
-        clinic: "OneSource · Welcome clinic",
+        clinic: "OneSource · Salud",
         kiosk: "Kiosk 01",
       };
       db.cases.unshift(c);

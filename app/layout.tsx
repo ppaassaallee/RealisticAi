@@ -1,3 +1,4 @@
+import { SiteLanguage } from "@/components/SiteLanguage";
 import ExperienceNavigation from "@/components/ExperienceNavigation";
 import type { Metadata } from "next";
 import "@fontsource/inter/400.css";
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ExperienceNavigation />
-        {children}
+        <SiteLanguage>
+          <ExperienceNavigation />
+          {children}
+        </SiteLanguage>
       </body>
     </html>
   );

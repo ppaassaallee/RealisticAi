@@ -20,13 +20,13 @@ export async function startBankConversation(s: BankSession) {
   const c = await tavus("/conversations", {
     pal_id: process.env.JULIANA_PAL_ID,
     face_id: process.env.JULIANA_FACE_ID,
-    conversation_name: "Banco Interior · synthetic demo",
+    conversation_name: "OneSource · synthetic demo",
     require_auth: true,
     custom_greeting:
       s.language === "en"
-        ? "Welcome! I'm Juliana, Banco Interior's virtual assistant. How can I help you today?"
-        : "¡Qué gusto saludarte! Soy Juliana, tu asistente virtual de Banco Interior. ¿En qué te puedo ayudar hoy?",
-    conversational_context: `Fictional bank, synthetic demonstration only. Context: ${modes[s.mode].name}. Language: ${s.language}. Every bankingJourney call opens the relevant screen. Use step open only when required data is missing; otherwise execute lookup/calculate/prepare directly in the same turn; searchBankKnowledge for approved information. Never access healthcare tools. Never claim real money moved. Ask one question at a time. Keep explanations warm and concise; do not repeat demo disclaimers on every turn or read every backend caveat aloud. Clearly distinguish simulated transaction confirmations once, and never claim real funds moved.`,
+        ? "Welcome! I'm Juliana, OneSource's virtual assistant. How can I help you today?"
+        : "¡Qué gusto saludarte! Soy Juliana, tu asistente virtual de OneSource. ¿En qué te puedo ayudar hoy?",
+    conversational_context: `OneSource banking experience, synthetic demonstration only. Present OneSource as the solution brand. Context: ${modes[s.mode].name}. Language: ${s.language}. Every bankingJourney call opens the relevant screen. Use step open only when required data is missing; otherwise execute lookup/calculate/prepare directly in the same turn; searchBankKnowledge for approved information. Never access healthcare tools. Never claim real money moved. Ask one question at a time. Keep explanations warm and concise; do not repeat demo disclaimers on every turn or read every backend caveat aloud. Clearly distinguish simulated transaction confirmations once, and never claim real funds moved.`,
     properties: {
       languages: s.language === "es" ? ["es", "en"] : ["en", "es"],
       max_call_duration: MAX_CALL_SECONDS,
@@ -55,15 +55,15 @@ export function bankVoiceError(error: unknown) {
   if (error instanceof TavusError) {
     const messages = {
       quota:
-        "Se agotaron los minutos de Tavus. Revisá Billing en tu workspace. Podés seguir usando la pantalla.",
+        "Se alcanzó el límite de conversación en vivo. Contactá al administrador de OneSource. Podés seguir usando la pantalla.",
       concurrency:
         "Ya hay una llamada activa en este workspace. Cerrala antes de volver a conectar.",
       rate_limit:
-        "Tavus está recibiendo demasiadas solicitudes. Esperá un momento y volvé a intentar.",
+        "El servicio de conversación está ocupado. Esperá un momento y volvé a intentar.",
       credentials:
-        "Tavus no autorizó la conexión. Revisá la clave y los permisos del workspace.",
+        "No se pudo autorizar la conversación. Contactá al administrador de OneSource.",
       unavailable:
-        "Tavus no está disponible en este momento. Podés continuar por pantalla y volver a conectar después.",
+        "La conversación en vivo no está disponible en este momento. Podés continuar por pantalla y volver a conectar después.",
       request:
         "No se pudo iniciar la llamada. Podés continuar por pantalla o revisar la configuración de voz.",
     };

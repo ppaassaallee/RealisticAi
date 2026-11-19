@@ -145,7 +145,7 @@ export function runBankTool(id: string, name: string, input: unknown) {
       });
     }
     if (name !== "bankingJourney")
-      throw new Error("Herramienta no disponible en Banco Interior.");
+      throw new Error("Herramienta no disponible en OneSource.");
     const journey = z
       .enum(journeyIds as [Journey, ...Journey[]])
       .parse(args.journey);

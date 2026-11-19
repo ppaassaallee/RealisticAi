@@ -1,65 +1,64 @@
+"use client";
+import { useSiteLanguage } from "@/components/SiteLanguage";
 import { ArrowUpRight, Mic, LayoutGrid, ArrowLeftRight } from "lucide-react";
 import styles from "./platform.module.css";
-export const metadata = { title: "AI Kiosk | Elegí tu demo" };
 export default function Page() {
+  const { language, t } = useSiteLanguage();
   return (
-    <main className={styles.page}>
+    <main className={styles.page} lang={language}>
       <div className={styles.intro}>
         <span>ONESOURCE · AI KIOSK</span>
         <h1>
-          Dos asistentes.
+          {t("Two assistants.", "Dos asistentes.")}
           <br />
-          Una forma más humana de atender.
+          {t("A more human way to help.", "Una forma más humana de atender.")}
         </h1>
         <p>
-          Elegí una experiencia para empezar. Podés pasar de Alex a Juliana
-          desde la barra superior, en cualquier momento.
+          {t("Choose an experience to get started. Switch between Alex and Juliana anytime using the navigation above.", "Elegí una experiencia para empezar. Podés pasar de Alex a Juliana desde la barra superior, en cualquier momento.")}
         </p>
       </div>
       <div className={styles.cards}>
         <a
           href="/kiosk"
           className={styles.card}
-          aria-label="Abrir demo de Alex"
+          aria-label={t("Open Alex demo", "Abrir demo de Alex")}
         >
           <div className={styles.portrait}>
             <img
               src="/alex-preview.png"
-              alt="Alex, asistente virtual de salud"
+              alt={t("Alex, virtual healthcare assistant", "Alex, asistente virtual de salud")}
             />
-            <span>SALUD · ONESOURCE</span>
+            <span>{t("HEALTHCARE \u00b7 ONESOURCE", "SALUD · ONESOURCE")}</span>
           </div>
           <div className={styles.copy}>
-            <h2>Conocé a Alex</h2>
+            <h2>{t("Meet Alex", "Conocé a Alex")}</h2>
             <p>
-              Una bienvenida más cercana. Consultá citas, probá el check-in y
-              pedí ayuda en recepción.
+              {t("A warmer welcome. Find appointments, try check-in, and request help from reception.", "Una bienvenida más cercana. Consultá citas, probá el check-in y pedí ayuda en recepción.")}
             </p>
             <strong>
-              Abrir demo de Alex <ArrowUpRight size={20} />
+              {t("Open Alex demo", "Abrir demo de Alex")} <ArrowUpRight size={20} />
             </strong>
           </div>
         </a>
         <a
           href="/juliana"
           className={`${styles.card} ${styles.bank}`}
-          aria-label="Abrir demo de Juliana"
+          aria-label={t("Open Juliana demo", "Abrir demo de Juliana")}
         >
           <div className={styles.portrait}>
             <img
               src="/juliana-preview.png"
-              alt="Juliana, asesora virtual de banca"
+              alt={t("Juliana, virtual banking assistant", "Juliana, asesora virtual de banca")}
             />
-            <span>BANCA · BANCO INTERIOR</span>
+            <span>{t("BANKING \u00b7 ONESOURCE", "BANCA · ONESOURCE")}</span>
           </div>
           <div className={styles.copy}>
-            <h2>Conocé a Juliana</h2>
+            <h2>{t("Meet Juliana", "Conocé a Juliana")}</h2>
             <p>
-              Más cerca de tus metas. Explorá remesas, ahorro, servicios y
-              orientación financiera.
+              {t("Closer to your goals. Explore remittances, savings, bill payments, and financial guidance.", "Más cerca de tus metas. Explorá remesas, ahorro, servicios y orientación financiera.")}
             </p>
             <strong>
-              Abrir demo de Juliana <ArrowUpRight size={20} />
+              {t("Open Juliana demo", "Abrir demo de Juliana")} <ArrowUpRight size={20} />
             </strong>
           </div>
         </a>
@@ -68,27 +67,24 @@ export default function Page() {
         <div>
           <LayoutGrid size={20} />
           <span>
-            <strong>Elegí tu formato</strong>Kiosco, tablet o chat web.
+            <strong>{t("Choose your format", "Elegí tu formato")}</strong>{t("Kiosk, tablet, or web chat.", "Kiosco, tablet o chat web.")}
           </span>
         </div>
         <div>
           <Mic size={20} />
           <span>
-            <strong>Iniciá la conversación</strong>Activá la voz cuando estés
-            listo.
+            <strong>{t("Start a conversation", "Iniciá la conversación")}</strong>{t("Turn on voice when you are ready.", "Activá la voz cuando estés   listo.")}
           </span>
         </div>
         <div>
           <ArrowLeftRight size={20} />
           <span>
-            <strong>Cambiá con un clic</strong>La sesión anterior se cierra al
-            salir.
+            <strong>{t("Switch in one click", "Cambiá con un clic")}</strong>{t("Your previous session closes when you leave.", "La sesión anterior se cierra al   salir.")}
           </span>
         </div>
       </div>
       <p className={styles.note}>
-        Explorar las pantallas no inicia una llamada. Las herramientas del
-        personal están en <strong>Equipo</strong>.
+        {t("Browsing does not start a call. Staff tools are under", "Explorar las pantallas no inicia una llamada. Las herramientas del personal están en")} <strong>{t("Team", "Equipo")}</strong>.
       </p>
     </main>
   );

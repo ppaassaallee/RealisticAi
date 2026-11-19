@@ -1,12 +1,12 @@
-# Banco Interior · Juliana — knowledge provenance
+# OneSource · Juliana — knowledge provenance
 
-Version 1.0 · editorial review 13 November 2026. Banco Interior is fictional. This material does not represent a licensed bank, a government service, a financial offer or individualized financial/legal advice.
+Version 1.0 · editorial review 13 November 2026. This OneSource banking experience uses fictional transactions. This material does not represent a licensed bank, a government service, a financial offer or individualized financial/legal advice.
 
 ## Catalog
 
 `knowledge.json` contains 170 distinct Spanish question/answer records: remittances (21), accounts (20), counter services (18), credit (18), savings (19), migrants/consular orientation (24), security (20), product discovery (12), accessibility (10), and deployment boundaries (8).
 
-Every record carries ID, topic, question, answer, source, category, validity, usage conditions, demo indicator, escalation rule, status and deployment-mode applicability. IDs are stable retrieval keys, not external approvals. `EDUCATIONAL` means editorial education, **not** institutional approval. `PENDING_APPROVAL` explicitly withholds unverified Banco Interior terms. `DEMO` marks fictional operational context. No transactional customer records, internal secrets or clinical material are in this public catalog.
+Every record carries ID, topic, question, answer, source, category, validity, usage conditions, demo indicator, escalation rule, status and deployment-mode applicability. IDs are stable retrieval keys, not external approvals. `EDUCATIONAL` means editorial education, **not** institutional approval. `PENDING_APPROVAL` explicitly withholds unverified OneSource terms. `DEMO` marks fictional operational context. No transactional customer records, internal secrets or clinical material are in this public catalog.
 
 Most answers are original plain-language editorial explanations written for this demo, with the repository as their source. That URL identifies their authorship, not approval by the external institutions below. These explanations do not copy or purport to reproduce institutional manuals. Numeric examples are arithmetic, not market rates. Sources linked directly in individual records support only those narrow statements.
 

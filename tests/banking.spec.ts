@@ -429,7 +429,7 @@ test("admin analytics, KB switches and CSV work without leaking patient state", 
   const d = page.waitForEvent("download");
   await page.getByRole("button", { name: "Exportar CSV" }).click();
   expect((await d).suggestedFilename()).toBe(
-    "banco-interior-demo-analytics.csv",
+    "onesource-juliana-analytics.csv",
   );
   await page.getByRole("button", { name: "Conocimiento", exact: true }).click();
   await page.getByLabel("Buscar catálogo de Juliana").fill("remesa");
@@ -478,8 +478,8 @@ test("visible navigation switches both ways and ends the outgoing session", asyn
     .getByRole("button", { name: "Enviar o cobrar remesas", exact: true })
     .click();
   await page
-    .getByRole("navigation", { name: "Navegación de demos" })
-    .getByRole("link", { name: "Alex · Salud", exact: true })
+    .getByRole("navigation", { name: "Demo navigation" })
+    .getByRole("link", { name: "Alex · Healthcare", exact: true })
     .click();
   await expect(page).toHaveURL(/\/kiosk$/);
   expect(
@@ -489,8 +489,8 @@ test("visible navigation switches both ways and ends the outgoing session", asyn
     data: { action: "session", language: "en" },
   });
   await page
-    .getByRole("navigation", { name: "Navegación de demos" })
-    .getByRole("link", { name: "Juliana · Banca", exact: true })
+    .getByRole("navigation", { name: "Demo navigation" })
+    .getByRole("link", { name: "Juliana · Banking", exact: true })
     .click();
   await expect(page).toHaveURL(/\/juliana$/);
   expect(
@@ -505,14 +505,14 @@ test("visible navigation switches both ways and ends the outgoing session", asyn
     ).status(),
   ).toBe(400);
   await page
-    .getByRole("navigation", { name: "Navegación de demos" })
-    .getByRole("link", { name: "Inicio", exact: true })
+    .getByRole("navigation", { name: "Demo navigation" })
+    .getByRole("link", { name: "Home", exact: true })
     .click();
   await expect(page).toHaveURL(/\/platform$/);
   await expect(
-    page.getByRole("link", { name: "Abrir demo de Alex", exact: true }),
+    page.getByRole("link", { name: "Open Alex demo", exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByRole("link", { name: "Abrir demo de Juliana", exact: true }),
+    page.getByRole("link", { name: "Open Juliana demo", exact: true }),
   ).toBeVisible();
 });

@@ -154,7 +154,7 @@ export default function Kiosk() {
       <header className="topbar">
         <Brand />
         <div className="location-label">
-          WELCOME CLINIC <span>Patient concierge</span>
+          ONESOURCE SALUD <span>Patient concierge</span>
         </div>
         <div className="language-toggle">
           <Globe2 size={17} />
@@ -498,8 +498,8 @@ export default function Kiosk() {
                   if (!state.avatarConfigured)
                     throw new Error(
                       es
-                        ? "La conversación en vivo requiere configurar Tavus. Puedes usar el registro táctil."
-                        : "Live conversation needs Tavus configuration. Touchscreen check-in is ready.",
+                        ? "La conversación en vivo aún no está disponible. Puedes usar el registro táctil."
+                        : "Live conversation is not available yet. Touchscreen check-in is ready.",
                     );
                   setActive(true);
                 })

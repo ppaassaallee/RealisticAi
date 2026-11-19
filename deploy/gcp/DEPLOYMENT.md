@@ -5,7 +5,7 @@ Verified November 18, 2026.
 - Demo: https://ai-kiosk.136.115.147.162.sslip.io/platform
 - Alex: https://ai-kiosk.136.115.147.162.sslip.io/kiosk
 - Juliana: https://ai-kiosk.136.115.147.162.sslip.io/juliana
-- GCP project: `ai-kiosk-demo-20261118`, organization `getboldr.ai`
+- GCP project: `ai-kiosk-demo-20261118`
 - VM: `ai-kiosk-demo`, `us-central1-a`, `e2-standard-2`
 - Static address: `136.115.147.162`
 - Billing account: user-selected account ending `C314BE`

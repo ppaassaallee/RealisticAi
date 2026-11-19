@@ -185,3 +185,7 @@
     font-size: 9px;
   }
 }
+
+.language { border: 1px solid #dce4ef; background: white; color: #154eaa; border-radius: 9px; padding: 10px 12px; font: inherit; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.language:focus-visible { outline: 3px solid #00a3ad; outline-offset: 2px; }
+@media (max-width: 600px) { .language { margin-left: auto; } .team { margin-left: 0; } }

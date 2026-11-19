@@ -206,7 +206,7 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
           </div>
           <div className="section-heading">
             <h2>Reception queue</h2>
-            <span>Welcome clinic · Kiosk 01</span>
+            <span>Salud · Kiosk 01</span>
           </div>
           {data.cases.length === 0 ? (
             <div className="empty-state">
@@ -235,7 +235,7 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
                   </div>
                   <h2>{c.reason}</h2>
                   <div className="case-meta">
-                    <span>{c.clinic}</span>
+                    <span>{c.clinic.replace(/Welcome clinic/gi, "Salud")}</span>
                     <span>{c.kiosk}</span>
                     <span>{c.language === "es" ? "Español" : "English"}</span>
                   </div>
@@ -357,8 +357,8 @@ export default function Console({ mode }: { mode: "staff" | "demo" }) {
                 <div>
                   <strong>
                     {data.avatarConfigured
-                      ? "Tavus configured"
-                      : "Tavus setup required"}
+                      ? "Live conversation ready"
+                      : "Live conversation setup required"}
                   </strong>
                   <span>
                     {data.avatarConfigured

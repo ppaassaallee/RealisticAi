@@ -249,7 +249,9 @@ export default function BankAvatar({
         if (cancelled) return;
         update("error");
         callbacks.current.onError(
-          e instanceof Error ? e.message : "Unable to connect",
+          e instanceof Error && !/tavus|daily[.-]|daily\.co/i.test(e.message)
+            ? e.message
+            : "No se pudo conectar la conversación. Intentá de nuevo o continuá por pantalla.",
         );
         callbacks.current.onStop();
       }

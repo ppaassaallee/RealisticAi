@@ -1,4 +1,4 @@
-// Fictional fixtures only. These are not Banco Interior products or actual customers.
+// Fictional fixtures only. These are not OneSource products or actual customers.
 const names = [
   "María López",
   "José García",
