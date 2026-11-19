@@ -1,3 +1,11 @@
+## November 18, 2026 — intuitive visitor navigation, deployed
+
+Application release `131fb9c73850` is live on the existing GCP demo URL. `/platform` is now a visitor home with two direct demo cards, rather than a bank-admin component. A visible shared top bar offers Inicio, Alex and Juliana on all screens. Equipo groups protected staff/admin tools, and staff login screens explain how to return to a demo. Outgoing kiosk sessions are ended before navigation; errors keep the visitor on the current screen with a retry message.
+
+Typecheck and production builds passed locally and on GCP. Across the regression run and targeted reruns, 84 checks passed and 3 opt-in checks were skipped. One initial check ran before the QA server was ready; two broad selectors were updated to distinguish the new navigation details/alerts from existing admin content and Next's route announcer. All three reruns passed.
+
+Live HTTPS checks used only visitor credentials: home did not request admin access; Alex/Juliana switching worked both ways; the outgoing banking session was cleared; a visitor could return from the staff-login screen to the demo; mobile navigation had no horizontal overflow; no browser JS errors occurred. Desktop/mobile screenshots were reviewed, and final portrait proportions were checked after deployment. No paid Tavus call was started.
+
 ## November 18, 2026 — GCP deployment verified
 
 Deployed application release `66f533ad725a` to project `ai-kiosk-demo-20261118`, VM `ai-kiosk-demo`, zone `us-central1-a`. Billing uses the user-selected account ending C314BE; the first selected account could not link because of its project billing quota. The application is live at https://ai-kiosk.136.115.147.162.sslip.io/platform behind visitor authentication.
